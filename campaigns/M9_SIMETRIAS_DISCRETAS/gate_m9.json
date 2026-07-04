@@ -1,0 +1,23 @@
+{
+  "P": {
+    "class_preserved": "20/20",
+    "mean_Podd": 21.28491416170585,
+    "sem": 47.488449229905655,
+    "no_carrier": true
+  },
+  "T": {
+    "dual_nontrivial": "20/20",
+    "sign_flips": "20/20",
+    "per_causet_nonzero": 108918.0,
+    "mean_Todd": 48316.8,
+    "sem": 28909.800335318818,
+    "mean_compat_zero": true,
+    "has_carrier": true
+  },
+  "C": {
+    "Codd": -0.087306398858859,
+    "Codd_conj": 0.087306398858859,
+    "has_carrier": true
+  },
+  "verdict": "CLASSIFICACAO CONFIRMADA: quebravel <=> tem carrier; P nunca (cinematico), T empirico, C dinamico"
+}

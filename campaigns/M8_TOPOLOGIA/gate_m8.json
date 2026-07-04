@@ -1,0 +1,97 @@
+{
+  "homotopy": {
+    "S1=U(1)": {
+      "pi1": "Z",
+      "pi2": "0",
+      "pi3": "0"
+    },
+    "S2": {
+      "pi1": "0",
+      "pi2": "Z",
+      "pi3": "Z(Hopf)"
+    },
+    "S3=SU(2)": {
+      "pi1": "0",
+      "pi2": "0",
+      "pi3": "Z",
+      "pi4": "Z2"
+    },
+    "SU(3)": {
+      "pi1": "0",
+      "pi2": "0",
+      "pi3": "Z"
+    },
+    "G2": {
+      "pi1": "0",
+      "pi2": "0",
+      "pi3": "Z"
+    }
+  },
+  "pi1_XY": [
+    {
+      "w": 1,
+      "measured": 0.9999999999999996,
+      "ok": true
+    },
+    {
+      "w": 2,
+      "measured": 1.9999999999999991,
+      "ok": true
+    },
+    {
+      "w": -1,
+      "measured": -0.9999999999999996,
+      "ok": true
+    }
+  ],
+  "pi2_babySkyrmion": [
+    {
+      "Q": 1,
+      "measured": 0.9995669412248159,
+      "ok": true
+    },
+    {
+      "Q": 2,
+      "measured": 1.9991341105655498,
+      "ok": true
+    },
+    {
+      "Q": -1,
+      "measured": -0.9995669412248159,
+      "ok": true
+    }
+  ],
+  "pi3_baryon": {
+    "B_ladder": [
+      0.7946783588039198,
+      0.8920807604551417,
+      0.9506826098797992
+    ],
+    "B_anti": -0.8920807604551418,
+    "monotone": true,
+    "anti_ok": true
+  },
+  "thinning_pi2": [
+    {
+      "p": 0.9,
+      "Q": 0.9995671274228126,
+      "ok": true
+    },
+    {
+      "p": 0.8,
+      "Q": 0.9995676367081794,
+      "ok": true
+    },
+    {
+      "p": 0.7,
+      "Q": 0.9995679171037727,
+      "ok": true
+    },
+    {
+      "p": 0.6,
+      "Q": 0.9995687092825054,
+      "ok": true
+    }
+  ],
+  "verdict": "CLASSIFICACAO CONFIRMADA: texturas de materia pi_n(X)!=0 protegidas e estaveis; defeitos de gauge proibidos por M5"
+}

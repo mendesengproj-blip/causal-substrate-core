@@ -1,0 +1,85 @@
+{
+  "checks": [
+    {
+      "name": "Matern II afina (p_ret < 1, repulsao ativa)",
+      "ok": true,
+      "detail": "p_ret(alpha=0.3)=0.264  n_cand=4524 -> n_ret=1193"
+    },
+    {
+      "name": "hard-core invariante: nenhum par retido com |s^2| < r0^2",
+      "ok": true,
+      "detail": "min|s^2|_retido=0.00143  r0^2=0.00143"
+    },
+    {
+      "name": "g(dtau)<1 em curto alcance (repulsao, nao Poisson)",
+      "ok": true,
+      "detail": "g_curto=0.742  g_longo=0.946"
+    },
+    {
+      "name": "g(dtau)->1 em longo alcance (independencia assintotica)",
+      "ok": true,
+      "detail": "g_longo=0.946"
+    },
+    {
+      "name": "cross-check <z> = 2E/N (clustering_metrics VERBATIM)",
+      "ok": true,
+      "detail": "clustering_metrics=18.207879296 vs 2E/N=18.207879296"
+    },
+    {
+      "name": "invariancia de Lorentz: conjunto RETIDO identico sob boost",
+      "ok": true,
+      "detail": "n_ret 1201/1201 iguais=True"
+    },
+    {
+      "name": "invariancia de Lorentz: arestas de cobertura BIT-identicas sob boost",
+      "ok": true,
+      "detail": "|E0|=10841 |Eb|=10841 simdif=0"
+    },
+    {
+      "name": "invariancia de Lorentz: <z> e C4 identicos sob boost",
+      "ok": true,
+      "detail": "z 18.053289/18.053289 C4 0.070067/0.070067"
+    }
+  ],
+  "passed": true,
+  "aux": {
+    "g_curve": {
+      "centers": [
+        0.0326875801828096,
+        0.09806274054842881,
+        0.16343790091404803,
+        0.22881306127966722,
+        0.2941882216452864,
+        0.35956338201090565,
+        0.42493854237652484,
+        0.49031370274214403,
+        0.5556888631077632,
+        0.6210640234733824,
+        0.6864391838390016,
+        0.7518143442046208
+      ],
+      "g": [
+        0.6048244753873309,
+        0.8791706213039351,
+        0.8958938199917047,
+        0.8961072441350864,
+        0.8763116314872585,
+        0.8822961114242011,
+        0.9246329805394332,
+        0.9497253907900296,
+        0.9301127214170692,
+        0.9262854144805875,
+        0.9555593982362095,
+        0.9563820585691338
+      ],
+      "n_retained": 1193,
+      "dtau0": 0.1961254810968576,
+      "taumax": 0.7845019243874304
+    },
+    "alpha_test": 0.3,
+    "p_ret": 0.26370468611847925,
+    "z_test": 18.207879295892706,
+    "c4_test": 0.06899995020434792,
+    "N_test": 1193
+  }
+}

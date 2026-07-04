@@ -1,0 +1,298 @@
+{
+  "config": {
+    "K0_BAR": 2.5,
+    "A": 1.5,
+    "P": 8,
+    "T": 10,
+    "Vt": 1500,
+    "n_cycles": 70,
+    "therm": 450
+  },
+  "runs": [
+    {
+      "label": "NULO_A0",
+      "k0_bar": 2.5,
+      "A": 0.0,
+      "P": 8,
+      "Vt": 1500,
+      "n_cycles": 70,
+      "n_sweeps": 560,
+      "seed": 101,
+      "burn_cycles": 23,
+      "runtime_s": 159.1,
+      "manifold_ok": true,
+      "k0_range": [
+        2.5,
+        2.5
+      ],
+      "N3": {
+        "n": 47,
+        "n_blocks": 8,
+        "mean": 1500.340425531915,
+        "std": 7.863721311088306,
+        "block_slope": -0.18601190476177012,
+        "t_slope": 0.47142146898815346,
+        "drift_span_over_blockscatter": 0.540080447980109,
+        "half1_mean": 1500.4114583333333,
+        "half2_mean": 1500.4947916666667,
+        "half_diff_in_sem": 0.04526412918495136,
+        "var_ratio_2nd_1st": 1.5768872547158423,
+        "var_Fbounds": [
+          0.32629825841664195,
+          3.1017780362710092
+        ],
+        "var_stable": true,
+        "stationary": true
+      },
+      "N0": {
+        "n": 47,
+        "n_blocks": 8,
+        "mean": 262.27659574468083,
+        "std": 4.122935597571302,
+        "block_slope": 0.985565476190508,
+        "t_slope": 2.7758305353827266,
+        "drift_span_over_blockscatter": 2.142753029629108,
+        "half1_mean": 260.7583333333333,
+        "half2_mean": 263.734375,
+        "half_diff_in_sem": 1.3920029740720545,
+        "var_ratio_2nd_1st": 3.677452918151885,
+        "var_Fbounds": [
+          0.32629825841664195,
+          3.1017780362710092
+        ],
+        "var_stable": false,
+        "stationary": false
+      },
+      "z": {
+        "n": 47,
+        "n_blocks": 8,
+        "mean": 13.444355674896524,
+        "std": 0.16859609338529455,
+        "block_slope": -0.04382636656759513,
+        "t_slope": 2.955133165060858,
+        "drift_span_over_blockscatter": 2.2001720684097616,
+        "half1_mean": 13.509650713559699,
+        "half2_mean": 13.383341607253662,
+        "half_diff_in_sem": 1.355539617905332,
+        "var_ratio_2nd_1st": 4.916052777983479,
+        "var_Fbounds": [
+          0.32629825841664195,
+          3.1017780362710092
+        ],
+        "var_stable": false,
+        "stationary": false
+      },
+      "dH": {
+        "n": 24,
+        "n_blocks": 5,
+        "mean": 2.4196702355807607,
+        "std": 0.024859050710599438,
+        "block_slope": -0.0018951431668107143,
+        "t_slope": 0.8231431485252662,
+        "drift_span_over_blockscatter": 1.0858884077989603,
+        "half1_mean": 2.422560739699791,
+        "half2_mean": 2.417766593509486,
+        "half_diff_in_sem": 0.8449350750981569,
+        "var_ratio_2nd_1st": 0.9777117183851133,
+        "var_Fbounds": [
+          0.18798168852728797,
+          5.319667079460438
+        ],
+        "var_stable": true,
+        "stationary": true
+      },
+      "gate1_pass": false
+    },
+    {
+      "label": "DRIVE_A1.5_P8_s201",
+      "k0_bar": 2.5,
+      "A": 1.5,
+      "P": 8,
+      "Vt": 1500,
+      "n_cycles": 70,
+      "n_sweeps": 560,
+      "seed": 201,
+      "burn_cycles": 23,
+      "runtime_s": 163.3,
+      "manifold_ok": true,
+      "k0_range": [
+        1.0,
+        4.0
+      ],
+      "N3": {
+        "n": 47,
+        "n_blocks": 8,
+        "mean": 1499.8563829787233,
+        "std": 9.532730327787137,
+        "block_slope": 0.3375496031747762,
+        "t_slope": 0.543459960631634,
+        "drift_span_over_blockscatter": 0.6189849239799918,
+        "half1_mean": 1499.0885416666667,
+        "half2_mean": 1500.4583333333333,
+        "half_diff_in_sem": 0.47871833611762427,
+        "var_ratio_2nd_1st": 1.0945744030536775,
+        "var_Fbounds": [
+          0.32629825841664195,
+          3.1017780362710092
+        ],
+        "var_stable": true,
+        "stationary": true
+      },
+      "N0": {
+        "n": 47,
+        "n_blocks": 8,
+        "mean": 260.45478723404256,
+        "std": 3.1915123438117945,
+        "block_slope": 0.10729166666669647,
+        "t_slope": 0.4226870355000156,
+        "drift_span_over_blockscatter": 0.4859527469700563,
+        "half1_mean": 259.93854166666665,
+        "half2_mean": 261.0,
+        "half_diff_in_sem": 0.9667387818032173,
+        "var_ratio_2nd_1st": 1.8626207383231155,
+        "var_Fbounds": [
+          0.32629825841664195,
+          3.1017780362710092
+        ],
+        "var_stable": true,
+        "stationary": true
+      },
+      "z": {
+        "n": 47,
+        "n_blocks": 8,
+        "mean": 13.531649114473407,
+        "std": 0.11773872438298638,
+        "block_slope": -0.002100635777092613,
+        "t_slope": 0.18318907441903717,
+        "drift_span_over_blockscatter": 0.21312540845897945,
+        "half1_mean": 13.548326606332996,
+        "half2_mean": 13.5124180296316,
+        "half_diff_in_sem": 0.7094435299337075,
+        "var_ratio_2nd_1st": 2.2198327472019805,
+        "var_Fbounds": [
+          0.32629825841664195,
+          3.1017780362710092
+        ],
+        "var_stable": true,
+        "stationary": true
+      },
+      "dH": {
+        "n": 24,
+        "n_blocks": 5,
+        "mean": 2.4314556778437577,
+        "std": 0.025351317169114852,
+        "block_slope": -0.0030809959907703143,
+        "t_slope": 0.5500951634236688,
+        "drift_span_over_blockscatter": 0.7657720605666294,
+        "half1_mean": 2.4395674551454922,
+        "half2_mean": 2.4257714655732827,
+        "half_diff_in_sem": 0.9004085692584256,
+        "var_ratio_2nd_1st": 0.6193213482722721,
+        "var_Fbounds": [
+          0.18798168852728797,
+          5.319667079460438
+        ],
+        "var_stable": true,
+        "stationary": true
+      },
+      "gate1_pass": true
+    },
+    {
+      "label": "DRIVE_A1.5_P8_s202",
+      "k0_bar": 2.5,
+      "A": 1.5,
+      "P": 8,
+      "Vt": 1500,
+      "n_cycles": 70,
+      "n_sweeps": 560,
+      "seed": 202,
+      "burn_cycles": 23,
+      "runtime_s": 165.5,
+      "manifold_ok": true,
+      "k0_range": [
+        1.0,
+        4.0
+      ],
+      "N3": {
+        "n": 47,
+        "n_blocks": 8,
+        "mean": 1499.9228723404256,
+        "std": 9.50395202377965,
+        "block_slope": 0.1509424603175109,
+        "t_slope": 0.43404417669253653,
+        "drift_span_over_blockscatter": 0.49861731801013276,
+        "half1_mean": 1499.44375,
+        "half2_mean": 1500.2447916666667,
+        "half_diff_in_sem": 0.5053663887187517,
+        "var_ratio_2nd_1st": 1.9077937167309826,
+        "var_Fbounds": [
+          0.32629825841664195,
+          3.1017780362710092
+        ],
+        "var_stable": true,
+        "stationary": true
+      },
+      "N0": {
+        "n": 47,
+        "n_blocks": 8,
+        "mean": 262.9414893617021,
+        "std": 4.00838549235464,
+        "block_slope": 0.14439484126986282,
+        "t_slope": 0.26634573483251756,
+        "drift_span_over_blockscatter": 0.30891584811225586,
+        "half1_mean": 262.6010416666667,
+        "half2_mean": 263.3854166666667,
+        "half_diff_in_sem": 0.3164833496494284,
+        "var_ratio_2nd_1st": 0.7646713457662415,
+        "var_Fbounds": [
+          0.32629825841664195,
+          3.1017780362710092
+        ],
+        "var_stable": true,
+        "stationary": true
+      },
+      "z": {
+        "n": 47,
+        "n_blocks": 8,
+        "mean": 13.423930780825991,
+        "std": 0.1611910122513009,
+        "block_slope": -0.005800414275874431,
+        "t_slope": 0.24374933344522626,
+        "drift_span_over_blockscatter": 0.2829766155073476,
+        "half1_mean": 13.436344329979805,
+        "half2_mean": 13.405943307157207,
+        "half_diff_in_sem": 0.2792071052804212,
+        "var_ratio_2nd_1st": 0.8519611749799966,
+        "var_Fbounds": [
+          0.32629825841664195,
+          3.1017780362710092
+        ],
+        "var_stable": true,
+        "stationary": true
+      },
+      "dH": {
+        "n": 24,
+        "n_blocks": 5,
+        "mean": 2.4416220235441024,
+        "std": 0.027986343635753242,
+        "block_slope": 0.0007671170986980337,
+        "t_slope": 0.11728272832783232,
+        "drift_span_over_blockscatter": 0.1709110168952166,
+        "half1_mean": 2.446022439595386,
+        "half2_mean": 2.4382073088860188,
+        "half_diff_in_sem": 0.45684395765783453,
+        "var_ratio_2nd_1st": 2.8532985278133363,
+        "var_Fbounds": [
+          0.18798168852728797,
+          5.319667079460438
+        ],
+        "var_stable": true,
+        "stationary": true
+      },
+      "gate1_pass": true
+    }
+  ],
+  "gate1_drive_pass": true,
+  "null_pass": false,
+  "runtime_s": 487.8
+}

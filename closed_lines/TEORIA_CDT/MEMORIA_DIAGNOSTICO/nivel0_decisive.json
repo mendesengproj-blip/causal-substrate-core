@@ -1,0 +1,151 @@
+{
+  "config": {
+    "burn": 30000,
+    "n_meas": 12000,
+    "n_real": 64,
+    "W": 1500,
+    "n_seeds": 3,
+    "SHORT": 15,
+    "WIDE": 400,
+    "smoke": false
+  },
+  "rows": {
+    "white_CONTROL": {
+      "kind": "white",
+      "params": {},
+      "stat_short": -0.00041450524039566655,
+      "stat_short_err": 0.003953157498665272,
+      "stat_wide": -0.038334115462531855,
+      "stat_wide_err": 0.01747277840076466,
+      "trans_short": -0.0008958670524373188,
+      "trans_wide": -0.031380455298551595,
+      "stationary_ok": 1.0,
+      "stat_rel": 0.000982082376237262
+    },
+    "K1_exp_tau5": {
+      "kind": "exp",
+      "params": {
+        "tau_m": 5.0
+      },
+      "stat_short": -0.6206879215560779,
+      "stat_short_err": 0.0008196104935662719,
+      "stat_wide": -0.5020420786508724,
+      "stat_wide_err": 0.0012512881797058174,
+      "trans_short": -0.622752328035702,
+      "trans_wide": -0.5010304028915392,
+      "stationary_ok": 1.0,
+      "stat_rel": 0.0005620087058093177
+    },
+    "exp_tau50_LONGO": {
+      "kind": "exp",
+      "params": {
+        "tau_m": 50.0
+      },
+      "stat_short": 1.2884045699887172,
+      "stat_short_err": 0.0033031333021274834,
+      "stat_wide": -0.5135006062860835,
+      "stat_wide_err": 0.005665806200325278,
+      "trans_short": 1.2797371214622137,
+      "trans_wide": -0.492393394179009,
+      "stationary_ok": 1.0,
+      "stat_rel": 0.0045130804178483705
+    },
+    "K2_power_a0.5": {
+      "kind": "power",
+      "params": {
+        "alpha": 0.5
+      },
+      "stat_short": 0.17915836947286812,
+      "stat_short_err": 0.004333418551673939,
+      "stat_wide": -0.5004975421615708,
+      "stat_wide_err": 0.004892670489495285,
+      "trans_short": 0.17926917834066255,
+      "trans_wide": -0.49970098211527625,
+      "stationary_ok": 1.0,
+      "stat_rel": 0.0009340010193593972
+    },
+    "K2_power_a0.3": {
+      "kind": "power",
+      "params": {
+        "alpha": 0.3
+      },
+      "stat_short": 0.5449129744242369,
+      "stat_short_err": 0.007403733926132177,
+      "stat_wide": -0.44126036406972385,
+      "stat_wide_err": 0.011589757141101697,
+      "trans_short": 0.5256539733560301,
+      "trans_wide": -0.44456149235275183,
+      "stationary_ok": 1.0,
+      "stat_rel": 0.0008464541569749695
+    },
+    "power_a0.1_EXTR": {
+      "kind": "power",
+      "params": {
+        "alpha": 0.1
+      },
+      "stat_short": 14.563701855141822,
+      "stat_short_err": 0.011365481257056333,
+      "stat_wide": -3.73554883845541,
+      "stat_wide_err": 0.29633878864555463,
+      "trans_short": 14.583552998141423,
+      "trans_wide": -2.3630862531016823,
+      "stationary_ok": 0.0,
+      "stat_rel": 0.9999999977692173
+    },
+    "K3_aging": {
+      "kind": "aging",
+      "params": {
+        "tau_m0": 5.0,
+        "t_age": 4000.0
+      },
+      "stat_short": 1.2833156397148648,
+      "stat_short_err": 0.002495404310885579,
+      "stat_wide": -0.5237323513007373,
+      "stat_wide_err": 0.007340160864763057,
+      "trans_short": -0.712827697132647,
+      "trans_wide": -0.49812197738230046,
+      "stationary_ok": 1.0,
+      "stat_rel": 0.002632079920016374
+    }
+  },
+  "verdicts": {
+    "K1_exp_tau5": {
+      "sigma_wide_vs_ctrl": -26.471087912261606,
+      "equilibrated": true,
+      "preserves_memory": false,
+      "short_window_false_positive": false
+    },
+    "exp_tau50_LONGO": {
+      "sigma_wide_vs_ctrl": -25.868645459226812,
+      "equilibrated": true,
+      "preserves_memory": false,
+      "short_window_false_positive": true
+    },
+    "K2_power_a0.5": {
+      "sigma_wide_vs_ctrl": -25.470752632075598,
+      "equilibrated": true,
+      "preserves_memory": false,
+      "short_window_false_positive": true
+    },
+    "K2_power_a0.3": {
+      "sigma_wide_vs_ctrl": -19.21704532143505,
+      "equilibrated": true,
+      "preserves_memory": false,
+      "short_window_false_positive": true
+    },
+    "power_a0.1_EXTR": {
+      "sigma_wide_vs_ctrl": -12.454679643964374,
+      "equilibrated": false,
+      "preserves_memory": false,
+      "short_window_false_positive": true
+    },
+    "K3_aging": {
+      "sigma_wide_vs_ctrl": -25.612063570160885,
+      "equilibrated": true,
+      "preserves_memory": false,
+      "short_window_false_positive": true
+    }
+  },
+  "overall": "ESTRUTURAL: na janela larga (decisiva) TODO kernel que equilibra LAVA a memoria (integral ~ -0.5, anti-persistente = FS-3D); os positivos de janela-curta sao ARTEFATO. Memoria so' sobrevive em kernel que NUNCA equilibra (fora-do-equilibrio). => NAO rodar Nivel 1; busca por semente-de-EQUILIBRIO estruturalmente FECHADA.",
+  "runtime_s": 218.93986415863037
+}

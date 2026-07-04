@@ -49,6 +49,21 @@ quoted number can be checked against its recorded run and re-executed:
 - `M1_TEOREMA_COMBINATORIO/`, `M3_ENDURECIMENTO/`, `M4_PAPER_NUCLEO/` — the
   combinatorial trichotomy, the proof hardening, and the core paper's build record
 
+## `closed_lines/` — the substrate-family measurements behind the trichotomy
+
+The core paper's Sec. IV states that the programme *measured* seven substrate
+families fail the string-net requirements ("the binary alternative") before the
+trichotomy made it a theorem. Those closed research lines ship here verbatim,
+code + verdicts + closing records: `REPULSAO_LORENTZ/` (Lorentz-invariant pair
+repulsion: Matérn II in s², clean death), `TEORIA_CDT/` (the CDT-substrate line:
+3D engine, the falsified information-seed, the NESS drive, the 4D kinematic
+trigger), `FOLIACAO_ANISOTROPICA/` (the foliated Hořava–Lifshitz escape — breaks
+Lorentz by construction, labelled as such), `NAO_PAIRWISE_E_NEQ/`,
+`SINTESE_SETE_MORTES/` (the binary-structure synthesis), `MECANISMOS_DE_ESCALA/`
+and `LEVANTAMENTO_PRE_CAUSAL/` (analytical closings). The remaining families
+(Poisson itself, the Rideout–Sorkin growth models, long-range percolation) are
+measured in the TEIC repository's `docs/campaigns/`.
+
 **Language note.** The campaign records are kept in Portuguese, the working
 language of the research record; the manuscripts and this README are the English
 interface. The `*.py` generators and `*.json`/`*.jsonl` outputs the records cite

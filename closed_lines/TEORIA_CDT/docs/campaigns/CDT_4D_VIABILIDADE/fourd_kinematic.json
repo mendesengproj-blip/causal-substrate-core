@@ -1,0 +1,120 @@
+{
+  "gate": {
+    "checks": [
+      {
+        "name": "seed \u2202(5-simplex)=K6 (z=5, C_tri=1, C4=1)",
+        "ok": true,
+        "detail": "z=5.00 C_tri=1.0000 C4=1.0000"
+      },
+      {
+        "name": "seed pseudomanifold (todo tet em 2 pentatopes) + \u03c7=2",
+        "ok": true,
+        "detail": "pmf=True \u03c7=2"
+      },
+      {
+        "name": "ap\u00f3s (1,5)\u00d7200: pseudomanifold + \u03c7(S^4)=2",
+        "ok": true,
+        "detail": "N=206 pmf=True \u03c7=2"
+      },
+      {
+        "name": "z bate f\u00f3rmula stacked (30+10k)/(6+k)",
+        "ok": true,
+        "detail": "z=9.8544 pred=9.8544"
+      }
+    ],
+    "passed": true
+  },
+  "measurement": {
+    "observable": "z + (transitivity,C4) no 1-esqueleto de ensemble (1,5) 4D stacked",
+    "edge": "FIXA [External]",
+    "ladder": [
+      50,
+      100,
+      200,
+      400,
+      800,
+      1600,
+      3200
+    ],
+    "rows": [
+      {
+        "N": 50,
+        "n_seeds": 4,
+        "z": 9.4,
+        "z_sem": 0.0,
+        "C_trans": 0.3880821056079896,
+        "C4": 0.27340377349636125,
+        "runtime_s": 0.0
+      },
+      {
+        "N": 100,
+        "n_seeds": 4,
+        "z": 9.7,
+        "z_sem": 0.0,
+        "C_trans": 0.28309994512954556,
+        "C4": 0.20392920366324344,
+        "runtime_s": 0.1
+      },
+      {
+        "N": 200,
+        "n_seeds": 4,
+        "z": 9.85,
+        "z_sem": 0.0,
+        "C_trans": 0.22383658362864783,
+        "C4": 0.16505029159770437,
+        "runtime_s": 0.2
+      },
+      {
+        "N": 400,
+        "n_seeds": 4,
+        "z": 9.925,
+        "z_sem": 0.0,
+        "C_trans": 0.1518391617588574,
+        "C4": 0.11892856832919735,
+        "runtime_s": 0.4
+      },
+      {
+        "N": 800,
+        "n_seeds": 2,
+        "z": 9.9625,
+        "z_sem": 0.0,
+        "C_trans": 0.11407148245834217,
+        "C4": 0.1007143236446528,
+        "runtime_s": 0.6
+      },
+      {
+        "N": 1600,
+        "n_seeds": 2,
+        "z": 9.98125,
+        "z_sem": 0.0,
+        "C_trans": 0.07525590857382516,
+        "C4": 0.07671879377396985,
+        "runtime_s": 1.8
+      },
+      {
+        "N": 3200,
+        "n_seeds": 2,
+        "z": 9.990625,
+        "z_sem": 0.0,
+        "C_trans": 0.06489006981788943,
+        "C4": 0.07282876799095436,
+        "runtime_s": 5.2
+      }
+    ],
+    "z_slope_top": 0.013525266008334525,
+    "z_saturates": true,
+    "z_diverges_poisson_like": false,
+    "C4_first": 0.27340377349636125,
+    "C4_top": 0.07282876799095436,
+    "C_trans_first": 0.3880821056079896,
+    "C_trans_top": 0.06489006981788943,
+    "C4_above_MF": true,
+    "C4_exponent": -0.3306724334136348,
+    "Ctrans_exponent": -0.44772335582990563,
+    "clustering_saturates": false,
+    "clustering_decays_to_MF": true
+  },
+  "verdict": "NAO_ARMADO",
+  "caveat": "stacked \u00e9 o regime APOLLONIANO n\u00e3o-gen\u00e9rico; clustering alto \u00e9 NECESS\u00c1RIO n\u00e3o suficiente. O discriminante real (flipped/DT) exige (3,3)/(2,4)+validador S^3 = campanha F1b-4D separada, N\u00c3O constru\u00edda aqui.",
+  "runtime_s": 8.3
+}

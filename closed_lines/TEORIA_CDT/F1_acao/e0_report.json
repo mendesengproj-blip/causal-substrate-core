@@ -1,0 +1,27 @@
+{
+  "E0a_N2": 18,
+  "E0a_N2_expected": 18,
+  "E0a_V": 9,
+  "E0a_V_expected": 9,
+  "E0a_invariants_ok": true,
+  "E0a_errs": [],
+  "E0b_euler_ok": true,
+  "E0c_moves": 10000,
+  "E0c_invariants_ok": true,
+  "E0c_errs": [],
+  "E0c_accept": {
+    "flip_try": 5054,
+    "flip_acc": 2653,
+    "add_try": 2466,
+    "add_acc": 561,
+    "del_try": 2480,
+    "del_acc": 558
+  },
+  "E0c_N2_after": 78,
+  "E0d_mid_ok": true,
+  "E0d_can_delete": true,
+  "E0d_reversible": true,
+  "E0d_flip_mid_ok": true,
+  "E0d_flip_involutive": true,
+  "E0_GREEN": true
+}

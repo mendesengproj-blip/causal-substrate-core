@@ -1,0 +1,220 @@
+{
+  "config": {
+    "n_steps_eq": 8000,
+    "n_meas": 3500,
+    "n_real": 64,
+    "n_seeds": 5,
+    "smoke": false
+  },
+  "results": {
+    "white_CONTROL": {
+      "kind": "white",
+      "params": {},
+      "transient_tail": -0.006517418156644653,
+      "transient_err": 0.003190861701129069,
+      "stationary_tail": -0.0016911153797033816,
+      "stationary_err": 0.004114189544467461,
+      "stationary_declared_frac": 1.0,
+      "cmem_stationary_mean": [
+        1.0,
+        0.0009,
+        0.001,
+        -0.0009,
+        0.0014,
+        -0.0014,
+        0.0002,
+        -0.0007,
+        0.0005,
+        -0.0006,
+        -0.0014,
+        -0.001,
+        -0.0005,
+        0.0013,
+        -0.0002,
+        -0.0004
+      ],
+      "cmem_transient_mean": [
+        1.0,
+        0.0014,
+        -0.0005,
+        -0.0022,
+        -0.002,
+        -0.0002,
+        -0.0015,
+        -0.0012,
+        -0.0009,
+        0.0007,
+        0.0012,
+        0.0002,
+        -0.0015,
+        -0.0009,
+        0.0011,
+        -0.0001
+      ]
+    },
+    "K1_exp": {
+      "kind": "exp",
+      "params": {
+        "tau_m": 5.0
+      },
+      "transient_tail": -0.6193793061841137,
+      "transient_err": 0.003358949938460907,
+      "stationary_tail": -0.6218608000108659,
+      "stationary_err": 0.0017538303810908198,
+      "stationary_declared_frac": 1.0,
+      "cmem_stationary_mean": [
+        1.0,
+        0.1404,
+        0.0457,
+        -0.0384,
+        -0.1001,
+        -0.1433,
+        -0.1602,
+        -0.1583,
+        -0.1381,
+        -0.1082,
+        -0.0719,
+        -0.0336,
+        0.0017,
+        0.0315,
+        0.0502,
+        0.0608
+      ],
+      "cmem_transient_mean": [
+        1.0,
+        0.1411,
+        0.0445,
+        -0.0397,
+        -0.1031,
+        -0.1425,
+        -0.1614,
+        -0.1582,
+        -0.1382,
+        -0.1057,
+        -0.0682,
+        -0.0313,
+        0.0016,
+        0.0299,
+        0.0512,
+        0.0606
+      ]
+    },
+    "K2_power": {
+      "kind": "power",
+      "params": {
+        "alpha": 0.5
+      },
+      "transient_tail": 0.14681529959796308,
+      "transient_err": 0.0062287754516204405,
+      "stationary_tail": 0.1532961200318681,
+      "stationary_err": 0.0026783062514429126,
+      "stationary_declared_frac": 1.0,
+      "cmem_stationary_mean": [
+        1.0,
+        0.047,
+        0.0393,
+        0.0311,
+        0.0275,
+        0.0197,
+        0.0163,
+        0.0109,
+        0.0078,
+        0.0029,
+        -0.0014,
+        -0.0046,
+        -0.0072,
+        -0.0084,
+        -0.0125,
+        -0.0151
+      ],
+      "cmem_transient_mean": [
+        1.0,
+        0.047,
+        0.0375,
+        0.0295,
+        0.0239,
+        0.0204,
+        0.0144,
+        0.0103,
+        0.0064,
+        0.004,
+        0.001,
+        -0.0033,
+        -0.0081,
+        -0.0104,
+        -0.0111,
+        -0.0148
+      ]
+    },
+    "K3_aging": {
+      "kind": "aging",
+      "params": {
+        "tau_m0": 5.0,
+        "t_age": 400.0
+      },
+      "transient_tail": 0.11639620626572222,
+      "transient_err": 0.009423907536949418,
+      "stationary_tail": 1.9742418855326687,
+      "stationary_err": 0.02998025264143057,
+      "stationary_declared_frac": 1.0,
+      "cmem_stationary_mean": [
+        1.0,
+        0.2239,
+        0.2159,
+        0.2049,
+        0.1957,
+        0.1814,
+        0.1692,
+        0.154,
+        0.1395,
+        0.1225,
+        0.105,
+        0.0878,
+        0.0704,
+        0.0536,
+        0.0343,
+        0.0159
+      ],
+      "cmem_transient_mean": [
+        1.0,
+        0.2013,
+        0.1694,
+        0.1354,
+        0.1021,
+        0.0704,
+        0.0379,
+        0.0087,
+        -0.0176,
+        -0.0398,
+        -0.0594,
+        -0.077,
+        -0.0919,
+        -0.1019,
+        -0.1077,
+        -0.1134
+      ]
+    }
+  },
+  "verdicts": {
+    "K1_exp": {
+      "sigma_stat_vs_ctrl": -138.66557198227025,
+      "sigma_trans_vs_ctrl": -132.2835488210247,
+      "preserves_stationary": false,
+      "preserves_transient": false
+    },
+    "K2_power": {
+      "sigma_stat_vs_ctrl": 31.5710111554484,
+      "sigma_trans_vs_ctrl": 21.909315202186168,
+      "preserves_stationary": true,
+      "preserves_transient": true
+    },
+    "K3_aging": {
+      "sigma_stat_vs_ctrl": 65.29585654679211,
+      "sigma_trans_vs_ctrl": 12.353806192002478,
+      "preserves_stationary": true,
+      "preserves_transient": true
+    }
+  },
+  "overall": "ESPECIFICO_DO_KERNEL (algum kernel preserva C_mem em estacionariedade -> ARMA Nivel 1)",
+  "runtime_s": 19.080398321151733
+}

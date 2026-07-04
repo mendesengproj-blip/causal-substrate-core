@@ -1,0 +1,40 @@
+{
+  "checks": [
+    {
+      "name": "MC equilibra (2 metades da energia concordam <5%)",
+      "ok": false,
+      "detail": "E 2a metade=1960.9 vs 3o quarto=2150.5  acc=0.08"
+    },
+    {
+      "name": "V3 nao-fatoravel: |dT3|/T3 > 3*|dP2|/P2 (trios mudam >> pares)",
+      "ok": true,
+      "detail": "dT3/T3=0.566  dP2/P2=0.168  razao=3.4x"
+    },
+    {
+      "name": "cross-check <z>=2E/N (clustering_metrics VERBATIM)",
+      "ok": true,
+      "detail": "15.065476190 vs 15.065476190"
+    },
+    {
+      "name": "invariancia de Lorentz: arestas de cobertura BIT-identicas sob boost",
+      "ok": true,
+      "detail": "|E0|=2531 |Eb|=2531 simdif=0"
+    },
+    {
+      "name": "invariancia de Lorentz: <z>/C4 identicos sob boost",
+      "ok": true,
+      "detail": "z 15.065476/15.065476 C4 0.293154/0.293154"
+    }
+  ],
+  "passed": false,
+  "aux": {
+    "nonfact": {
+      "P2_base": 7.581279988310369,
+      "P2_v3": 6.30630472568193,
+      "T3_base": 2.302473605780613,
+      "T3_v3": 0.9984767917806506,
+      "dP2_rel": 0.1681741427033869,
+      "dT3_rel": 0.5663460422417591
+    }
+  }
+}

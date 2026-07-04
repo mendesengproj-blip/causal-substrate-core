@@ -1,0 +1,60 @@
+{
+  "params": {
+    "T": 28,
+    "ell0": 28,
+    "gammas": [
+      0.0,
+      1.0,
+      2.0,
+      4.0
+    ],
+    "kappa": 0.3,
+    "delta": 0.5,
+    "eps": 0.02,
+    "Vt": 1568,
+    "equil": 1500,
+    "sample": 900
+  },
+  "rows": {
+    "0.0": {
+      "dH_band": 2.116,
+      "dH_extrap": 2.147,
+      "O2_clump": 0.1876,
+      "O2_clump_err": 0.0301,
+      "O3_PR": 0.9258,
+      "O3_PR_err": 0.0006,
+      "vol": 1572
+    },
+    "1.0": {
+      "dH_band": 1.785,
+      "dH_extrap": 1.409,
+      "O2_clump": 2.6103,
+      "O2_clump_err": 0.2596,
+      "O3_PR": 0.62,
+      "O3_PR_err": 0.005,
+      "vol": 1562
+    },
+    "2.0": {
+      "dH_band": 1.462,
+      "dH_extrap": 1.135,
+      "O2_clump": 5.1416,
+      "O2_clump_err": 0.5329,
+      "O3_PR": 0.6707,
+      "O3_PR_err": 0.0039,
+      "vol": 1574
+    },
+    "4.0": {
+      "dH_band": 1.111,
+      "dH_extrap": 0.861,
+      "O2_clump": 20.391,
+      "O2_clump_err": 0.4855,
+      "O3_PR": 0.7604,
+      "O3_PR_err": 0.001,
+      "vol": 1528
+    }
+  },
+  "O2_clump_moves": true,
+  "O1_dH_moves": true,
+  "O3_PR_moves": true,
+  "FS2D_INDICATOR": "POSITIVO (dispara FS-3D)"
+}

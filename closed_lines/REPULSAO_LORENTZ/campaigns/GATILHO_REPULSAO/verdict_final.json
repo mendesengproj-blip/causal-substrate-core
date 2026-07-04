@@ -1,0 +1,176 @@
+{
+  "verdict": "MORTE_LIMPA",
+  "barreira_1_z": {
+    "resultado": "FALHA (diverge em todo alpha)",
+    "z_rel_slope_top_por_alpha": {
+      "0.0": 0.42612564973655565,
+      "0.1": 0.42101725807498047,
+      "0.2": 0.43913501499646107,
+      "0.3": 0.35826013963925496
+    },
+    "satura_em": [],
+    "leitura": "expoente local relativo de <z> permanece >> 0.05 em todo alpha; a repulsao NAO reduz o crescimento da coordenacao."
+  },
+  "barreira_2_C4": {
+    "resultado": "FALHA (rastreia Poisson; decai com N)",
+    "C4_familia_sobre_Poisson_no_N_casado": {
+      "0.0": 1.0,
+      "0.1": 1.0070356691987001,
+      "0.2": 1.0810743862071086,
+      "0.3": 1.2925317259327282
+    },
+    "C4_compare_N_target": 2500,
+    "C4_decai_na_baseline_Poisson": true,
+    "leitura": "a N casado, C4(alpha) ~= C4(Poisson) (razao ~1); C4 decai com N como o grafo de cobertura de Poisson. As flags per-alpha 'C4>0' de alpha=0.2/0.3 no verdict() sao ARTEFATO do truncamento do ladder (esses alpha batem no teto de candidatos e nao alcancam o N do topo)."
+  },
+  "matched_N": {
+    "note": "familia(alpha) vs Poisson(alpha=0) no MESMO N_target",
+    "by_target": {
+      "400": {
+        "N_target": 400,
+        "N_base": 389.4,
+        "z_base": 9.42533534164494,
+        "C4_base": 0.10282220360659342,
+        "alpha": {
+          "0.0": {
+            "N": 389.4,
+            "z": 9.42533534164494,
+            "C4": 0.10282220360659342,
+            "z_over_base": 1.0,
+            "C4_over_base": 1.0
+          },
+          "0.1": {
+            "N": 429.4,
+            "z": 10.466940423597467,
+            "C4": 0.10452583731810346,
+            "z_over_base": 1.110511196068568,
+            "C4_over_base": 1.016568733714639
+          },
+          "0.2": {
+            "N": 489.2,
+            "z": 10.894104104218073,
+            "C4": 0.09703404736989985,
+            "z_over_base": 1.155831989985918,
+            "C4_over_base": 0.9437071368472169
+          },
+          "0.3": {
+            "N": 510.2,
+            "z": 11.320822250370703,
+            "C4": 0.1018945036770367,
+            "z_over_base": 1.201105514023542,
+            "C4_over_base": 0.9909776303462026
+          }
+        }
+      },
+      "800": {
+        "N_target": 800,
+        "N_base": 789.0,
+        "z_base": 14.390950132933176,
+        "C4_base": 0.07852089422390669,
+        "alpha": {
+          "0.0": {
+            "N": 789.0,
+            "z": 14.390950132933176,
+            "C4": 0.07852089422390669,
+            "z_over_base": 1.0,
+            "C4_over_base": 1.0
+          },
+          "0.1": {
+            "N": 848.2,
+            "z": 15.277430461508255,
+            "C4": 0.07861149568310889,
+            "z_over_base": 1.0615998471529966,
+            "C4_over_base": 1.001153851597052
+          },
+          "0.2": {
+            "N": 915.8,
+            "z": 16.106499691207,
+            "C4": 0.07763105694171694,
+            "z_over_base": 1.1192103052562075,
+            "C4_over_base": 0.9886675095720086
+          },
+          "0.3": {
+            "N": 833.8,
+            "z": 14.991511850024931,
+            "C4": 0.08101680883499485,
+            "z_over_base": 1.0417319017538245,
+            "C4_over_base": 1.0317866299888399
+          }
+        }
+      },
+      "1500": {
+        "N_target": 1500,
+        "N_base": 1527.3333333333333,
+        "z_base": 20.651432900648498,
+        "C4_base": 0.06002180114160214,
+        "alpha": {
+          "0.0": {
+            "N": 1527.3333333333333,
+            "z": 20.651432900648498,
+            "C4": 0.06002180114160214,
+            "z_over_base": 1.0,
+            "C4_over_base": 1.0
+          },
+          "0.1": {
+            "N": 1536.3333333333333,
+            "z": 21.020669773677962,
+            "C4": 0.06012229409015929,
+            "z_over_base": 1.0178794795889379,
+            "C4_over_base": 1.001674274124498
+          },
+          "0.2": {
+            "N": 1526.6666666666667,
+            "z": 20.48673620822756,
+            "C4": 0.06222684950615306,
+            "z_over_base": 0.99202492663762,
+            "C4_over_base": 1.0367374574339883
+          },
+          "0.3": {
+            "N": 1293.3333333333333,
+            "z": 19.077981426150718,
+            "C4": 0.06636107971696467,
+            "z_over_base": 0.9238090895645129,
+            "C4_over_base": 1.1056162670028353
+          }
+        }
+      },
+      "2500": {
+        "N_target": 2500,
+        "N_base": 2519.0,
+        "z_base": 26.2476114497853,
+        "C4_base": 0.047468134217582475,
+        "alpha": {
+          "0.0": {
+            "N": 2519.0,
+            "z": 26.2476114497853,
+            "C4": 0.047468134217582475,
+            "z_over_base": 1.0,
+            "C4_over_base": 1.0
+          },
+          "0.1": {
+            "N": 2474.3333333333335,
+            "z": 26.297045598417103,
+            "C4": 0.04780210430741689,
+            "z_over_base": 1.00188337703514,
+            "C4_over_base": 1.0070356691987001
+          },
+          "0.2": {
+            "N": 2256.3333333333335,
+            "z": 24.7289957055761,
+            "C4": 0.051316584063669624,
+            "z_over_base": 0.9421427070758615,
+            "C4_over_base": 1.0810743862071086
+          },
+          "0.3": {
+            "N": 1545.0,
+            "z": 20.37590687542397,
+            "C4": 0.06135406944705827,
+            "z_over_base": 0.7762956608225257,
+            "C4_over_base": 1.2925317259327282
+          }
+        }
+      }
+    }
+  },
+  "conclusao": "MORTE_LIMPA em AMBAS as barreiras: a repulsao Lorentz-invariante (hard-core no intervalo invariante) nao reduz <z> (diverge como Poisson) nem cria clustering acima da baseline de Poisson. Quebrar a INDEPENDENCIA do sprinkling (a hipotese do teorema parcial) com repulsao de par invariante NAO escapa das barreiras: a exclusao remove pares perto do cone, mas eles se regeneram na nova densidade e a divergencia da orbita de boost (nao-compacta) sobrevive."
+}

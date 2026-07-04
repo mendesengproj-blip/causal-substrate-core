@@ -1,0 +1,154 @@
+{
+  "gammas": [
+    0.0,
+    1.0,
+    2.0,
+    4.0
+  ],
+  "kappas": [
+    0.0,
+    0.3,
+    0.6
+  ],
+  "dH_at_gamma4": {
+    "0.0": 1.601,
+    "0.3": 1.073,
+    "0.6": 1.0
+  },
+  "clump_at_gamma4": {
+    "0.0": 11.2444,
+    "0.3": 19.995,
+    "0.6": 17.5499
+  },
+  "dH_at_gamma0": {
+    "0.0": 2.069,
+    "0.3": 2.069,
+    "0.6": 2.069
+  },
+  "clump_at_gamma0": {
+    "0.0": 0.1216,
+    "0.3": 0.1216,
+    "0.6": 0.1216
+  },
+  "spread_dH4": 0.601,
+  "clump4_ratio": 1.778,
+  "kappa_independent": false,
+  "qualitative_diff": true,
+  "verdict": "D1 SOBREVIVE: κ muda o colapso qualitativamente -> o transporte faz algo que o feedback genérico não faz. Prior elevado; D2/3D continua o discriminador real.",
+  "full": {
+    "0.0": {
+      "0.0": {
+        "dH_band": 2.069,
+        "dH_extrap": 2.088,
+        "O2_clump": 0.1216,
+        "O2_clump_err": 0.0151,
+        "O3_PR": 0.7937,
+        "O3_PR_err": 0.0015,
+        "vol": 1570
+      },
+      "1.0": {
+        "dH_band": 2.134,
+        "dH_extrap": 1.96,
+        "O2_clump": 0.9998,
+        "O2_clump_err": 0.0905,
+        "O3_PR": 0.526,
+        "O3_PR_err": 0.0024,
+        "vol": 1568
+      },
+      "2.0": {
+        "dH_band": 2.052,
+        "dH_extrap": 1.827,
+        "O2_clump": 1.3933,
+        "O2_clump_err": 0.0465,
+        "O3_PR": 0.5994,
+        "O3_PR_err": 0.0019,
+        "vol": 1530
+      },
+      "4.0": {
+        "dH_band": 1.601,
+        "dH_extrap": 1.499,
+        "O2_clump": 11.2444,
+        "O2_clump_err": 0.6918,
+        "O3_PR": 0.706,
+        "O3_PR_err": 0.0022,
+        "vol": 1532
+      }
+    },
+    "0.3": {
+      "0.0": {
+        "dH_band": 2.069,
+        "dH_extrap": 2.088,
+        "O2_clump": 0.1216,
+        "O2_clump_err": 0.0151,
+        "O3_PR": 0.9258,
+        "O3_PR_err": 0.0008,
+        "vol": 1570
+      },
+      "1.0": {
+        "dH_band": 1.989,
+        "dH_extrap": 1.891,
+        "O2_clump": 3.2595,
+        "O2_clump_err": 0.1793,
+        "O3_PR": 0.6257,
+        "O3_PR_err": 0.0028,
+        "vol": 1552
+      },
+      "2.0": {
+        "dH_band": 1.914,
+        "dH_extrap": 1.812,
+        "O2_clump": 4.6657,
+        "O2_clump_err": 0.7145,
+        "O3_PR": 0.6722,
+        "O3_PR_err": 0.0018,
+        "vol": 1550
+      },
+      "4.0": {
+        "dH_band": 1.073,
+        "dH_extrap": 0.908,
+        "O2_clump": 19.995,
+        "O2_clump_err": 0.4697,
+        "O3_PR": 0.7598,
+        "O3_PR_err": 0.0013,
+        "vol": 1540
+      }
+    },
+    "0.6": {
+      "0.0": {
+        "dH_band": 2.069,
+        "dH_extrap": 2.088,
+        "O2_clump": 0.1216,
+        "O2_clump_err": 0.0151,
+        "O3_PR": 0.9508,
+        "O3_PR_err": 0.0007,
+        "vol": 1570
+      },
+      "1.0": {
+        "dH_band": 1.926,
+        "dH_extrap": 1.56,
+        "O2_clump": 4.5987,
+        "O2_clump_err": 0.293,
+        "O3_PR": 0.6818,
+        "O3_PR_err": 0.0054,
+        "vol": 1568
+      },
+      "2.0": {
+        "dH_band": 1.491,
+        "dH_extrap": 1.292,
+        "O2_clump": 9.3029,
+        "O2_clump_err": 0.19,
+        "O3_PR": 0.7158,
+        "O3_PR_err": 0.001,
+        "vol": 1552
+      },
+      "4.0": {
+        "dH_band": 1.0,
+        "dH_extrap": 0.984,
+        "O2_clump": 17.5499,
+        "O2_clump_err": 1.0088,
+        "O3_PR": 0.7786,
+        "O3_PR_err": 0.0021,
+        "vol": 1532
+      }
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "checks": [
+    {
+      "name": "cross-check <z>=2E/N (clustering_metrics VERBATIM)",
+      "ok": true,
+      "detail": "12.247136829 vs 12.247136829"
+    },
+    {
+      "name": "frame-dependencia DEMONSTRADA: <z>/C4 MUDAM sob boost+refoliacao (nao Lorentz)",
+      "ok": true,
+      "detail": "d<z>=2.5992 dC4=0.0445  (z 12.25->9.65, C4 0.198->0.243)"
+    },
+    {
+      "name": "espaco-tempo genuino: componente gigante atravessa as T fatias (lam>0)",
+      "ok": true,
+      "detail": "fatias atravessadas=8/8"
+    }
+  ],
+  "passed": true,
+  "aux": {
+    "n_total": 1659,
+    "z": 12.247136829415311,
+    "C4": 0.19818900003549186,
+    "transitivity": 0.48300245406493836,
+    "r_s": 0.3908820095223359,
+    "r_t": 0.29316150714175193,
+    "frame_dep_dz": 2.59915611814346,
+    "frame_dep_dC4": 0.04451747191273084
+  }
+}

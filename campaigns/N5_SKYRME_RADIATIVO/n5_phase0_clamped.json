@@ -1,0 +1,49 @@
+{
+  "G0": {
+    "grad_relerr": 1.741929933629649e-09,
+    "hess_relerr": 1.282363419896626e-07,
+    "pass": true
+  },
+  "G1": {
+    "n_zero_noclamp": 3,
+    "psd": true,
+    "lambda_min_clamped": 5.607587789298704,
+    "pass": true
+  },
+  "G2": {
+    "rel_diffs": [
+      0.0,
+      0.0
+    ],
+    "pass": true
+  },
+  "G3": {
+    "poisson_ratios": [
+      -1.3574113406400494,
+      -1.258676578394865,
+      -1.3128428456250079
+    ],
+    "poisson_mean": -1.3096435882199742,
+    "target": 0.5555555555555556,
+    "cubic_ratio": 4.35110916035478,
+    "pass": false
+  },
+  "G4": {
+    "delta_a4": [
+      -3.2885846823482723e-13,
+      -2.563751294593075e-12,
+      -1.169423932689817e-12
+    ],
+    "mean": -1.3540112318392399e-12,
+    "sem": 6.517261284676635e-13,
+    "pass": true
+  },
+  "all_pass": false,
+  "_meta": {
+    "campaign": "N5_SKYRME_RADIATIVO",
+    "timestamp": "2026-07-02T12:34:32.174913+00:00",
+    "python": "3.12.10",
+    "numpy": "2.4.4",
+    "platform": "Windows-11-10.0.26200-SP0"
+  }
+}

@@ -1,0 +1,84 @@
+{
+ "meta": {
+  "base_seed": 20260703,
+  "smoke": true,
+  "rho": 4.0,
+  "tx": 2.5,
+  "Ls": [
+   2.0
+  ],
+  "nseeds": 1,
+  "ncfg": 1,
+  "burn": 500,
+  "spacing": 200,
+  "J": [
+   1.0,
+   0.05
+  ],
+  "K_ir": 12,
+  "c_clip": 0.2,
+  "kres": 1.7951958020513104,
+  "kmax": 2.221441469079183
+ },
+ "verdicts": {
+  "cells": {
+   "ord_L2.0": {
+    "n_cfg": 1,
+    "delta_q": [
+     0.43319749532593577,
+     NaN
+    ],
+    "delta_cl": [
+     0.3991264065593306,
+     NaN
+    ],
+    "ratio": 1.085364155833023,
+    "clip_frac": 0.0,
+    "n_zeros": [
+     0
+    ],
+    "trM_mean": 1.7667100846818578,
+    "max_pair_resid": 4.890082152016175e-16
+   },
+   "dis_L2.0": {
+    "n_cfg": 1,
+    "delta_q": [
+     0.39600693476140253,
+     NaN
+    ],
+    "delta_cl": [
+     0.22960367704839235,
+     NaN
+    ],
+    "ratio": 1.7247412578585937,
+    "clip_frac": 0.2910662824207493,
+    "n_zeros": [
+     0
+    ],
+    "trM_mean": -1.6534100554420013,
+    "max_pair_resid": 5.913476169549591e-16
+   }
+  },
+  "M2_2": {
+   "D3": false,
+   "excede_3x": {
+    "2.0": false
+   },
+   "nao_decresce": null,
+   "detalhe": {
+    "L2.0": {
+     "delta_q": 0.43319749532593577,
+     "delta_cl": 0.3991264065593306,
+     "gap_3x": -0.7641817243520562,
+     "sig": NaN
+    }
+   }
+  },
+  "Q2_forte": {
+   "min_gap_rel": 0.0026193147595467365,
+   "degenerescencia_exata": false,
+   "nota": "esperado: nenhuma (Poisson sem simetria); Axioma 2 = postulado"
+  }
+ },
+ "runtime_s": 10.293781042098999
+}

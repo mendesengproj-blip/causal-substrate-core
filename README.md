@@ -25,14 +25,16 @@ six manuscripts under review or submission-ready at MNRAS, PRD, PRL and CQG —
 whose reproducible core is public at
 **<https://github.com/mendesengproj-blip/TEIC>**.
 
-## `campaigns/` — the pre-registered research record
+## `campaigns/` — the pre-registered research record, with its code and data
 
 Every claim graded [measured] in the manuscripts traces to a campaign executed
 under the programme's discipline: **pre-registration before any code** (priors,
 windows, kill criteria frozen in `PRE_REGISTRO.md`), engineering gates before
 measurement, amendments only pre-run with a git trail, and negatives reported as
-negatives. The `campaigns/` folder carries those records verbatim
-(`RESULTADO.md` per campaign; phase-by-phase for the N4 quantization campaign):
+negatives. The `campaigns/` folder carries those records verbatim — and, for the
+computational campaigns, the **generators themselves plus the emitted verdicts**
+(`*.py` + `*.json`/`*.jsonl` with run parameters and numbers embedded), so every
+quoted number can be checked against its recorded run and re-executed:
 
 - `N0_PRINCIPIO/`, `N0_STRESS_TEST/` — the boundary principle and its stress test
 - `N1_CONTROLE_SU4/` — the compact target is *hosted, not selected* (SU(4) control)
@@ -49,9 +51,10 @@ negatives. The `campaigns/` folder carries those records verbatim
 
 **Language note.** The campaign records are kept in Portuguese, the working
 language of the research record; the manuscripts and this README are the English
-interface. File references inside the records (`*.py`, `*.jsonl`, commit hashes)
-point into the full research archive — code, raw outputs and checkpoints — which
-is larger than this repository and **available from the author on request**.
+interface. The `*.py` generators and `*.json`/`*.jsonl` outputs the records cite
+ship in the same folders (commit hashes refer to the programme's working
+history). The programme charter and roadmap (`CHARTER.md`, `ROADMAP_V2.md`) sit
+at the repository root. Requirements: Python 3.12 with `numpy` and `scipy`.
 
 ## How to break these papers
 

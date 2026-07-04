@@ -1,0 +1,110 @@
+{
+ "meta": {
+  "base_seed": 20260703,
+  "smoke": true,
+  "rho": 8.0,
+  "tx": 2.5,
+  "Ls": [
+   1.5
+  ],
+  "nseeds": 2,
+  "windows": {
+   "W1": [
+    0.25,
+    0.5
+   ],
+   "W2": [
+    0.5,
+    1.0
+   ],
+   "W3": [
+    1.0,
+    2.0
+   ]
+  },
+  "alphas": [
+   1.0,
+   2.0
+  ]
+ },
+ "verdicts": {
+  "per_L": {
+   "L1.5": {
+    "nseeds": 2,
+    "N": 439.5,
+    "wrap_frac": 0.3930673807899701,
+    "max_pair_resid": 7.903666719410464e-16,
+    "W1": {
+     "N_O": 5.0,
+     "S_un": [
+      -8927722882516818.0,
+      NaN
+     ],
+     "S_a1": [
+      -12.11347998795175,
+      NaN
+     ],
+     "S_a2": null
+    },
+    "W2": {
+     "N_O": 13.0,
+     "S_un": [
+      3.911500022720686,
+      1.275025315625178
+     ],
+     "S_a1": [
+      8.892448756924516,
+      2.613568007995203
+     ],
+     "S_a2": [
+      15.585277308617453,
+      5.895560024016104
+     ]
+    },
+    "W3": {
+     "N_O": 64.0,
+     "S_un": [
+      39.22559867494119,
+      2.0005076026429904
+     ],
+     "S_a1": [
+      4.612591042260551,
+      0.09140159116197742
+     ],
+     "S_a2": null
+    },
+    "S0_fullbox": 1.4218626276374675e-12
+   }
+  },
+  "M3_1": {
+   "kappa_un": NaN,
+   "se": NaN,
+   "ratio_un_tr_L3": 0.4398675921157056,
+   "passa": false,
+   "nota": "gate de reprodu\u00e7\u00e3o (Fase 0 \u00a75.1): falha = engenharia, n\u00e3o f\u00edsica"
+  },
+  "M3_2": {
+   "kappa_a1": NaN,
+   "se_a1": NaN,
+   "class_a1": "SUB_AREA",
+   "kappa_a2": NaN,
+   "se_a2": NaN,
+   "class_a2": "SUB_AREA",
+   "robustez_fraca": false,
+   "veredito": "SUB_AREA"
+  },
+  "window_axis": {
+   "razao_volume_prevista": 4.0,
+   "razoes": {
+    "L1.5": {
+     "trunc_W2_W1": -0.7340953025694581,
+     "trunc_W3_W2": 0.5187087570978403,
+     "untrunc_W2_W1": -4.381296411406974e-16,
+     "untrunc_W3_W2": 10.028275200585938
+    }
+   },
+   "nota": "volume \u21d2 ~4 por passo; \u00e1rea \u21d2 ~1 (localiza no canto)"
+  }
+ },
+ "runtime_s": 2.3286149501800537
+}

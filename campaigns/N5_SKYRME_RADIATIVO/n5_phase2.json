@@ -1,0 +1,37 @@
+{
+  "J_c": 0.045,
+  "c_K_loop": {
+    "mean": -0.012961369335497465,
+    "sem": 9.737630339512204e-05
+  },
+  "alpha4_loop_B": {
+    "mean": -0.13799991552274143,
+    "sem": 0.001136280122183602
+  },
+  "e4_tree_B": {
+    "mean": -4.038840591253265,
+    "sem": 0.029224535199545
+  },
+  "D1": true,
+  "D1_reason": {
+    "cK_not_positive_2sigma": true,
+    "loop_hedgehog_nonpositive": true
+  },
+  "D2": null,
+  "L6_c_K_loop": {
+    "mean": -0.012865341177680536,
+    "sem": 0.00013893961865067418
+  },
+  "L6_loop_a4_B": {
+    "mean": -0.12515186524356767,
+    "sem": 0.0008887858887311492
+  },
+  "verdict_phase2": "D1 TOTAL DEATH (radiative route)",
+  "_meta": {
+    "campaign": "N5_SKYRME_RADIATIVO",
+    "timestamp": "2026-07-02T13:55:54.241630+00:00",
+    "python": "3.12.10",
+    "numpy": "2.4.4",
+    "platform": "Windows-11-10.0.26200-SP0"
+  }
+}

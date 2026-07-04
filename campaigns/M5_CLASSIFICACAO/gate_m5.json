@@ -1,0 +1,161 @@
+{
+  "rows": [
+    {
+      "class": "Poisson_M2",
+      "invariant": "SIM (Lorentz)",
+      "metrics": {
+        "z_mean": 11.003333333333334,
+        "post_density": 0.0,
+        "exp_growth_rate": 0.6940457346715514,
+        "poly_growth_exp": 2.701617923809037,
+        "R_used": 6,
+        "c4_per_node": 29.591666666666665,
+        "transitivity": 0.0
+      },
+      "sna": {
+        "SNA1_finite_valence": false,
+        "SNA2_amenable_2D": false,
+        "SNA3_percolating_loops": true,
+        "SNA": false
+      },
+      "extra": {
+        "z_growth_slope": 2.1342856314098504,
+        "z_series": [
+          8.685,
+          10.3025,
+          11.003333333333334
+        ]
+      }
+    },
+    {
+      "class": "box_order_2D",
+      "invariant": "SIM (embutida)",
+      "metrics": {
+        "z_mean": 11.396666666666667,
+        "post_density": 0.0,
+        "exp_growth_rate": 0.8201062706182688,
+        "poly_growth_exp": 2.8058372086911163,
+        "R_used": 5,
+        "c4_per_node": 29.066666666666666,
+        "transitivity": 0.0
+      },
+      "sna": {
+        "SNA1_finite_valence": false,
+        "SNA2_amenable_2D": false,
+        "SNA3_percolating_loops": true,
+        "SNA": false
+      },
+      "extra": {
+        "z_growth_slope": 1.880163474757112,
+        "z_series": [
+          9.33,
+          10.6275,
+          11.396666666666667
+        ]
+      }
+    },
+    {
+      "class": "CSG_sparse",
+      "invariant": "covariante",
+      "metrics": {
+        "z_mean": 3.8733333333333335,
+        "post_density": 0.0,
+        "exp_growth_rate": 0.6577055503267376,
+        "poly_growth_exp": 3.316298323944356,
+        "R_used": 9,
+        "c4_per_node": 0.024,
+        "transitivity": 0.0
+      },
+      "sna": {
+        "SNA1_finite_valence": true,
+        "SNA2_amenable_2D": false,
+        "SNA3_percolating_loops": false,
+        "SNA": false
+      },
+      "extra": {}
+    },
+    {
+      "class": "CSG_dense",
+      "invariant": "covariante",
+      "metrics": {
+        "z_mean": 2.68,
+        "post_density": 0.346,
+        "exp_growth_rate": 0.13959300773571445,
+        "poly_growth_exp": 0.9870336955969062,
+        "R_used": 15,
+        "c4_per_node": 0.5586666666666666,
+        "transitivity": 0.0
+      },
+      "sna": {
+        "SNA1_finite_valence": true,
+        "SNA2_amenable_2D": false,
+        "SNA3_percolating_loops": true,
+        "SNA": false
+      },
+      "extra": {}
+    },
+    {
+      "class": "exchangeable",
+      "invariant": "SIM",
+      "metrics": null,
+      "sna": {
+        "SNA1_finite_valence": false,
+        "SNA2_amenable_2D": false,
+        "SNA3_percolating_loops": false,
+        "SNA": false,
+        "note": "[teorema T2]: sem Hasse localmente finito"
+      },
+      "extra": {}
+    },
+    {
+      "class": "crystal_E1_M1b",
+      "invariant": "NAO (cristal/BHS)",
+      "metrics": {
+        "z_mean": 9.6021875,
+        "post_density": 0.0,
+        "exp_growth_rate": 0.26602512083967617,
+        "poly_growth_exp": 1.926653308701192,
+        "R_used": 15,
+        "c4_per_node": 18.4265625,
+        "transitivity": 0.0
+      },
+      "sna": {
+        "SNA1_finite_valence": true,
+        "SNA2_amenable_2D": true,
+        "SNA3_percolating_loops": true,
+        "SNA": true
+      },
+      "extra": {
+        "n": 6400
+      }
+    },
+    {
+      "class": "foliated_lattice",
+      "invariant": "NAO (graduado/T1)",
+      "metrics": {
+        "z_mean": 3.95,
+        "post_density": 0.0,
+        "exp_growth_rate": 0.2489247569142242,
+        "poly_growth_exp": 1.757182836655347,
+        "R_used": 15,
+        "c4_per_node": 1.9503125,
+        "transitivity": 0.0
+      },
+      "sna": {
+        "SNA1_finite_valence": true,
+        "SNA2_amenable_2D": true,
+        "SNA3_percolating_loops": true,
+        "SNA": true
+      },
+      "extra": {
+        "n": 6400
+      }
+    }
+  ],
+  "sna_true": [
+    "crystal_E1_M1b",
+    "foliated_lattice"
+  ],
+  "invariant_sna_counterexample": [],
+  "verdict": "CLASSIFICACAO CONFIRMADA: SNA <=> nao-invariante"
+}

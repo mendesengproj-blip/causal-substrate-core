@@ -1,0 +1,81 @@
+{
+  "goldstone": [
+    {
+      "target": "SU(2)",
+      "expected": 3,
+      "found": 3,
+      "ok": true
+    },
+    {
+      "target": "SU(3)",
+      "expected": 8,
+      "found": 8,
+      "ok": true
+    },
+    {
+      "target": "SU(4)",
+      "expected": 15,
+      "found": 15,
+      "ok": true
+    },
+    {
+      "target": "G2",
+      "expected": 14,
+      "found": 14,
+      "ok": true
+    },
+    {
+      "target": "O(3)=S^2",
+      "expected": 2,
+      "found": 2,
+      "ok": true
+    }
+  ],
+  "pi3": [
+    {
+      "target": "SU(2)",
+      "B_ladder": [
+        0.7946783588039198,
+        0.8920807604551417,
+        0.9506826098797992
+      ],
+      "B_anti": -0.8920807604551418,
+      "monotone": true,
+      "anti_ok": true
+    },
+    {
+      "target": "SU(3)",
+      "B_ladder": [
+        0.7946783588039198,
+        0.8920807604551417,
+        0.9506826098797992
+      ],
+      "B_anti": -0.8920807604551418,
+      "monotone": true,
+      "anti_ok": true
+    }
+  ],
+  "apriori": {
+    "SU(5)": {
+      "dim": 24,
+      "pi3": "Z"
+    },
+    "SO(5)": {
+      "dim": 10,
+      "pi3": "Z"
+    },
+    "Sp(2)": {
+      "dim": 10,
+      "pi3": "Z"
+    },
+    "F4": {
+      "dim": 52,
+      "pi3": "Z"
+    },
+    "E6": {
+      "dim": 78,
+      "pi3": "Z"
+    }
+  },
+  "verdict": "HOSPEDAGEM CONFIRMADA: forma = funcao a-priori de X; grupo=input"
+}

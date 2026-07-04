@@ -1,0 +1,770 @@
+% M4 PAPER-NUCLEO --- the axiomatic core of the programme (ROADMAP_V2 item M4).
+% v0 born from N0+N0' with the M1 (combinatorial trichotomy) and M2/N5 (radiative
+% Skyrme) sections already hardened.  Claim discipline (charter): every statement
+% is about the CLASS defined by the axioms, never "Nature obeys"; [measured]
+% inputs are cited as measurements of the programme; open flanks are a section,
+% not a footnote.  Compiles with pdflatex+bibtex (revtex4-2).
+\documentclass[aps,prd,reprint,nofootinbib,superscriptaddress,floatfix]{revtex4-2}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{bm}
+\usepackage{booktabs}
+\usepackage{hyperref}
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}{Lemma}
+\newtheorem{proposition}{Proposition}
+\newtheorem{corollary}{Corollary}
+\theoremstyle{definition}
+\newtheorem{axiom}{Axiom}
+\newtheorem{definition}{Definition}
+\newtheorem{prediction}{P\!}
+
+\begin{document}
+
+\title{What a Lorentz-invariant discrete order can carry:\\
+an axiomatic core for emergence on causal substrates}
+
+\author{Miqueias Alves Mendes}
+\email{mikalvesm@gmail.com}
+\affiliation{Independent Researcher, Ibiapina, Cear\'a, Brazil}
+\date{\today}
+
+\begin{abstract}
+We organize a research programme's results into an axiomatic core. Two axioms---a
+Poisson-sprinkled causal order (forced, not chosen: it is the unique Lorentz-invariant
+discretization) and a generic compact internal field---define an \emph{intrinsic class}
+of theories. One lemma fixes what a pair of events carries: time with sign and structure,
+space without sign and without structure. One theorem then reads the isometry group
+through three structural layers: non-compact orbits force divergent valence (no scale,
+no emergent photon); disconnected components cannot condense (no parity violation, no
+spontaneous arrow); the compact part protects discrete indices (topological charge,
+exact multiplets, $\mathbb{Z}_2$ exchange statistics). The loop side of the argument is
+upgraded from measurement to a combinatorial trichotomy: exchangeable orders have no
+locally finite Hasse diagram; growth orders confine all cycles to finite blocks between
+posts; and square-generated percolating loop structure \emph{forces} a grading---an
+intrinsic foliation---so it cannot coexist with boost invariance. Renormalization is
+built in: Poisson is the exact fixed point and global attractor of thinning, with no
+invariant relevant direction; the density is the theory's single external unit. The
+theory keeps exactly two external inputs beyond the axioms, each with a proof of
+necessity: the Skyrme-type core cost, whose dominance cannot emerge at tree level (a
+pointwise identity) and does not emerge radiatively (a measured one-loop channel
+coefficient, negative at $\sim$130$\sigma$); and the lattice-to-SI conversion, one number
+because there is one unit. We list the falsifiable predictions the core generates, the
+places where it demonstrably does not deliver, and the ten open frontiers---including
+the single combinatorial flank (rank-frustrated loop lattices) that our theorems do not
+close.
+\end{abstract}
+
+\maketitle
+
+\section{Introduction: the inverted question}
+\label{sec:intro}
+
+A research programme that couples matter fields to a causal set eventually accumulates
+two kinds of results: positives (long-range order, topological solitons, an exact meson
+octet, confinement, an emergent Newtonian sector~\cite{MatterGravityPRD,SU3PRD}) and
+negatives (no emergent photon, no scale, no chirality, no spontaneous arrow of time).
+For most of our programme's history the question was \emph{does $X$ emerge?}, answered
+one campaign at a time. This paper inverts the question: \emph{what is a
+Lorentz-invariant discrete order permitted to carry?} The answer turns out to be
+compact---in both senses of the word---and it converts the programme's scattered record
+into a short deductive core: two axioms, one lemma, one boundary theorem with three
+layers, a combinatorial trichotomy, a built-in renormalization statement, and exactly
+two external inputs each carrying a proof of its own necessity.
+
+Three disciplines govern every claim below. First, all statements are about the
+\emph{class} defined by the axioms---never about Nature; contact with Nature is listed
+separately as predictions (Sec.~\ref{sec:predictions}). Second, statements carry their
+epistemic grade explicitly: [theorem] (proved here or cited), [sketch] (complete
+argument, gaps declared in Sec.~\ref{sec:open}), or [measured] (a pre-registered
+campaign of the programme). Third, the places where the principle does \emph{not}
+deliver are a section of this paper (Sec.~\ref{sec:vaccine}), because an exclusion
+principle that explained everything would explain nothing.
+
+A companion paper~\cite{WenComplement} develops one corollary---why string-net
+condensation does not transport to causal substrates---at full length; here it appears
+as one row of a table.
+
+\section{Axioms and the intrinsic class}
+\label{sec:axioms}
+
+\begin{axiom}[substrate]
+The substrate is a causal set $(C,\prec)$ obtained by a Poisson sprinkling of density
+$\rho$ into $\mathbb{M}^d$ ($d\ge2$), with the discrete--continuum correspondence
+frame-independent.
+\end{axiom}
+
+Poisson is not an independent postulate: it is the unique Lorentz-invariant discrete
+measure (Bombelli--Henson--Sorkin~\cite{BHS2009}); the contrast is also measured in the
+programme (a regular lattice fails isotropy) [measured]. Discreteness plus invariance
+therefore \emph{forces} Axiom~1 up to the single parameter $\rho$.
+
+\begin{axiom}[matter]
+On $C$ lives a generic internal field $n\colon C\to X$ with $X$ compact (a group
+manifold $G$ or coset $G/H$, $G$ compact), coupled by an invariant functional of the
+intrinsic data (order and counting); genericity fixes the leading term
+$\propto(1-n_i\!\cdot n_j)$ on related pairs [literature: universality; robustness to
+$\pm10\%$ deformations measured].
+\end{axiom}
+
+\begin{definition}[intrinsic class]
+An \emph{intrinsic} rule or observable is a measurable functional of $(C,\prec,n)$
+alone---order, counting, and the internal field; no embedding coordinate.
+\end{definition}
+
+\begin{lemma}[pair content]
+\label{lem:pair}
+{\rm[theorem; proof in Appendix~\ref{app:proofs}]} For two sprinkled events: if $i\prec j$ (timelike), the intrinsic datum is
+\emph{signed and structured}---the relation has a direction, and the Alexandrov interval
+$[i,j]$ carries internal structure: $N(i,j)\sim\mathrm{Poisson}(\rho c_d\Delta\tau^d)$
+and the longest chain $\approx m_d\rho^{1/d}\Delta\tau$
+(Brightwell--Gregory~\cite{BrightwellGregory1991}; the limit exists by Kingman's
+subadditive theorem) estimate proper time \emph{with sign}. If $i\parallel j$
+(spacelike), the intrinsic datum is \emph{one bit} (incomparability); all further
+information is third-party reconstruction and yields only \emph{unsigned} invariants
+(estimates of $|s^2|$~\cite{RideoutWallden2009}, Gram data), determining a spatial
+configuration at best up to the full orthogonal group $O(d-1)$, reflections included.
+\end{lemma}
+
+\noindent\textbf{Slogan.} \emph{The causal order carries time with sign and space
+without sign---and without structure.}
+
+Two anchors calibrate the lemma. In the continuum, Malament and
+Hawking--King--McCarthy~\cite{Malament1977,HKM1976} show that causal order determines
+the metric up to a conformal factor, fixed by volume: ``order + number = geometry''.
+Lemma~\ref{lem:pair} is the finite-density form of that theorem: the timelike half is
+intrinsic at any density; the spacelike half is asymptotic-statistical, recovered only
+in the infinite-information limit. (The full discrete recovery is the causal-set
+Hauptvermutung---a conjecture, with instances measured in the programme: dimension,
+curvature at $23.5\sigma$, Schwarzschild proper time to $0.2\%$ [measured].) Second, an
+antichain---the discrete support of a Cauchy surface---is \emph{amorphous}: its induced
+suborder is empty, its automorphism group is the full symmetric group, and its only
+intrinsic datum is its cardinality [theorem, trivial but central]. Spacelike $p$-cells
+with intrinsic structure and orientation do not exist in the class, for any $p\ge1$.
+
+\section{The Boundary Theorem}
+\label{sec:boundary}
+
+\begin{theorem}[boundary]
+\label{thm:boundary}
+{\rm[assembled; component proofs in Appendix~\ref{app:proofs} and citations]} In the
+intrinsic class (Axioms 1--2), emergent
+statistics sees the group $O(d-1,1)\times G_{\rm int}$ through exactly three structural
+layers:
+\begin{enumerate}
+\item \textbf{Non-compact orbits $\Rightarrow$ divergence.} Every invariant of a causal
+pair is a function of $\Delta\tau$ (Lemma~\ref{lem:pair}); the orbit of ``neighbours at
+fixed $\Delta\tau$'' is the hyperboloid $H^{d-1}=SO^{+}(d-1,1)/SO(d-1)$, of infinite
+volume; by Campbell--Mecke,
+$\langle z\rangle=\rho\,\mathrm{Vol}(H^{d-1})\int\Delta\tau^{d-1}q(\Delta\tau)\,
+d\Delta\tau=\infty$ for every non-trivial invariant rule [theorem]. Refused: finite
+valence, correlation length, genuine criticality, emergent scale.
+\item \textbf{Disconnected components $\Rightarrow$ unfixable bits.}
+$\pi_0(O(d-1,1))=\mathbb{Z}_2\times\mathbb{Z}_2$ (parity $\times$ time reversal). The
+$P$ component acts \emph{trivially} on intrinsic data (it is an isomorphism of
+$(C,\prec)$); the $T$ component acts as \emph{order duality} ($\prec\,\leftrightarrow\,
+\succ$), statistically symmetric. Refused: spatial orientation (even spontaneously,
+Sec.~\ref{sec:parity}), arrow of time (statistically; the spontaneous channel is closed
+by measurement).
+\item \textbf{Compact part $\Rightarrow$ protected discrete indices.} Invariants of
+compact groups have discrete spectra: $\pi_3(G)=\mathbb{Z}$ for every simple compact $G$
+(Bott), $\pi_4(SU(2))=\mathbb{Z}_2$, representations of compact $H$ discrete and
+finite-dimensional. Permitted---and, when the dynamics orders, protected: topological
+charge, exact multiplets, $\mathbb{Z}_2$ exchange statistics, Goldstone counting.
+\end{enumerate}
+\end{theorem}
+
+\begin{table}[b]
+\caption{\label{tab:corollaries}The named corollaries and what each uses. All four
+negative corollaries were first found as measurements; the theorem is what makes them
+one fact.}
+\begin{ruledtabular}
+\begin{tabular}{llp{3.1cm}}
+Corollary & Uses & Extra input \\
+\colrule
+no-scale & layer 1 & none (clean) \\
+no-photon & layers 1+2 & $B\equiv$ spacelike flux (definition) \\
+no-chirality & layer 2 ($P$) & none (Sec.~\ref{sec:parity}) \\
+axis-without-arrow & layer 2 ($T$) & spontaneous side: [measured] \\
+topological matter & layer 3 & Axiom 2; existence [measured] \\
+\end{tabular}
+\end{ruledtabular}
+\end{table}
+
+The scope is declared, not hidden: the principle is \emph{kinematic}. It governs what
+the class can express and the \emph{form} of what emerges (which indices, which
+degeneracies); the \emph{existence} of the positives (long-range order at finite $J$,
+confinement) is dynamical and was measured, not deduced. An exclusion principle should
+not predict phase diagrams.
+
+\emph{The Wigner precedent.} The pattern is already standard physics: in Wigner's
+classification~\cite{Wigner1939}, numbers that lock discrete (spin, helicity) are
+invariants of compact little groups, and labels that run continuous (momentum on the
+mass shell $H^3$) live on non-compact orbits---massless continuous-spin representations,
+never observed, are exactly the non-compact part acting non-trivially. The same
+hyperboloid that carries Wigner's continuous labels kills our valence. The Boundary
+Theorem is the statistical version, over order, of a pattern quantum field theory
+already practices.
+
+\section{The combinatorial trichotomy: loops are theorems now}
+\label{sec:trichotomy}
+
+Layer~1 forbids finite valence for \emph{invariant rules on the sprinkling}. A
+string-net substrate~\cite{LevinWen2005,WenComplement} needs more: finite valence
+\emph{and} a percolating, finite-dimensional space of closed loops. Our programme
+measured seven substrate families fail one or the other, never neither---the ``binary
+alternative''. The following results replace that measured binary, in the three named
+invariance classes, by theorems. Fix a poset $(P,\prec)$ with Hasse diagram $H$ (covering
+relations $x\lessdot y$), and for a closed walk $\gamma$ let the \emph{circulation}
+$\varphi(\gamma)$ be (up-steps $-$ down-steps).
+
+\begin{lemma}
+\label{lem:balanced}
+{\rm[theorem]} Hasse diagrams have no triangles; every 4-cycle of $H$ has $\varphi=0$
+(the directed square is acyclicity-forbidden; the $\varphi=\pm2$ pattern contradicts
+covering).
+\end{lemma}
+
+\begin{theorem}[hinge: square-generated loops force a foliation]
+\label{thm:T1}
+{\rm[theorem]} Let $G\subseteq H$ be connected with cycle space over $\mathbb{Z}$
+generated by 4-cycles. Then there is $r\colon V(G)\to\mathbb{Z}$, unique up to a
+constant, with $r(y)=r(x)+1$ on every covering edge of $G$: the suborder is graded.
+\end{theorem}
+
+\begin{proof}
+By Lemma~\ref{lem:balanced}, $\varphi$ annihilates the generators, hence the whole cycle
+space over $\mathbb{Z}$; the path integral $r(x)=\varphi(x_0\!\to\!x)$ is
+path-independent and rises by 1 on each up-edge.
+\end{proof}
+
+The hypothesis is exactly Wen's requirement, with no slack: Wilson loops decompose
+multiplicatively into \emph{oriented} plaquettes---integer generation, not mod-2. The
+level sets $\{r=k\}$ are antichains for the order generated inside $G$, and $r$ is
+built from order alone, so every automorphism preserving $G$ preserves $r$ up to a
+constant: \emph{a macroscopic square-generated cluster carries an intrinsic,
+equivariant, discrete foliation---a preferred time readable off the order}. This is the
+hinge of the programme's ``seven deaths'' made exact: arming square plaquettes
+\emph{obliges} the foliation that breaks boost invariance; the CDT-like family sits on
+that side by construction, and nothing invariant can sit on it at all.
+
+\begin{theorem}[exchangeable exclusion]
+\label{thm:T2}
+{\rm[theorem]} No exchangeable random order on $\mathbb{N}$ has a non-empty, locally
+finite Hasse diagram: by Aldous--Hoover/Janson~\cite{Janson2011}, the covering array is
+exchangeable with constant density $p$ per ergodic component; $p>0$ gives every element
+infinite expected Hasse degree, $p=0$ gives an a.s.\ empty covering relation.
+\end{theorem}
+
+\begin{proposition}[box orders]
+\label{prop:T3}
+{\rm[theorem, cited anchor]} For the dominance order on $n$ i.i.d.\ points in $[0,1]^d$ (for $d=2$,
+the causal order of $\mathbb{M}^2$ at $45^\circ$), the expected number of covering pairs
+is $\sim\frac{2}{(d-1)!}\,n(\log n)^{d-1}$, so
+$\langle z\rangle_{\rm Hasse}=\Theta((\log n)^{d-1})\to\infty$~\cite{Brightwell1993}.
+Even without the Lorentz group, order in $d\ge2$ makes the divergence inevitable in weak
+(logarithmic) form; the boost upgrades it to a power.
+\end{proposition}
+
+\begin{theorem}[growth orders: cycles confined by posts]
+\label{thm:T4}
+{\rm[theorem, given cited anchors]} In transitive percolation (the simplest
+Rideout--Sorkin sequential growth model~\cite{RideoutSorkin2000}), posts occur with
+positive density and the infinite order decomposes into an ordinal sum of i.i.d.\ finite
+blocks~\cite{ABBJ1994,BollobasBrightwell1997}. No Hasse edge crosses a post (if
+$x\prec w\prec y$ strictly, $x\lessdot y$ is impossible) [theorem, new but elementary],
+so the Hasse diagram is a chain of finite blocks joined at cut vertices: every cycle is
+confined to a single $O_P(1)$ block, the number of independent cycles in radius $R$
+grows $\lesssim R$, and loop structure never percolates in dimension $\ge2$.
+\end{theorem}
+
+\noindent\textbf{Trichotomy.} A random order carrying percolating finite-dimensional
+loop structure would need locally finite valence (against Theorems~\ref{thm:T2} and
+Proposition~\ref{prop:T3} in the exchangeable/embedded classes), unconfined cycles
+(against Theorem~\ref{thm:T4} in the growth class with posts), and---if the plaquettes
+are squares---no foliation (against Theorem~\ref{thm:T1}, which forces one). The
+intersection demanded by string-net emergence is empty in all three named invariance
+classes.
+
+\noindent\textbf{Two retrodictions [measured].} (i) Sprinkled orders are violently
+rank-frustrated (chains of different lengths between the same endpoints at every scale),
+so by the contrapositive of Theorem~\ref{thm:T1} square-generated clusters cannot grow:
+measured as flat, non-growing ``diamond towers'' ($\sim0.25\%$). (ii) In sequential
+growth, intra-block cycles exist but never percolate: measured as the sub-mean-field
+$C_4$ plateau ($\approx0.019$ at $N=16000$) of the growth-model campaign.
+
+\noindent\textbf{The declared flank.} Theorem~\ref{thm:T1} governs balanced (square)
+generators only. A homogeneous, finite-valence order whose cycle space is generated by
+\emph{rank-frustrated} cycles (pentagons, $\varphi=\pm1$) and percolates in two
+dimensions of cycles would escape all three legs. We can neither construct nor forbid
+it; it is the programme's named open target (Sec.~\ref{sec:open}, item 1). Two
+observations narrow it: every foliated/CDT-family substrate uses squares, so a
+pentagonal substrate would be new physics by itself; and percolating rank frustration is
+precisely the profile of sprinklings, where valence diverges---suggesting, not proving,
+that frustration and finite valence compete.
+
+\section{The signature boundary}
+\label{sec:signature}
+
+Where exactly does the refusal begin? Not at ``Lorentzian vs.\ Euclidean'' but at the
+\emph{definiteness of the signature} [sketch]: for an invariant point process on
+$(\mathbb{R}^d,g)$ with $g$ of signature $(p,q)$ and any invariant non-trivial connection
+rule, the orbit of neighbours at fixed invariant separation is the quadric
+$\{x\!\cdot\!x=c\}$. For definite signature the orbit is the compact sphere $S^{d-1}$
+and $\langle z\rangle<\infty$ for every integrable profile---divergence is
+\emph{chosen}; for indefinite signature every separation quadric has infinite volume and
+$\langle z\rangle=\infty$ for every rule---divergence is \emph{forced}. The Lorentzian
+case $q=1$ is merely the unique indefinite signature with a convex cone, i.e., with an
+\emph{order}. Wick rotation is exactly the operation that crosses the boundary (it
+compactifies the group), and an order cannot cross it and remain an order. This is why
+sixty years of condensed-matter emergence---which lives entirely on the definite
+side---do not transport to causal substrates; the companion paper~\cite{WenComplement}
+develops the consequences.
+
+\section{Renormalization is built in: the thinning fixed point}
+\label{sec:thinning}
+
+The coarse-graining native to the class is random deletion (thinning) $R_p$: keep each
+element independently with probability $p$, take the induced suborder~\cite{Surya2019}.
+In $\mathbb{M}^d$ the dilation $x\to x/b$ is an automorphism of the causal structure and
+maps $\mathrm{PPP}(\rho)$ to $\mathrm{PPP}(\rho b^d)$, so \emph{the law of the intrinsic
+order is $\rho$-independent}: $\rho$ is the theory's external unit, and the rescaling
+step of a usual RG acts trivially. Three statements then close the scale question from
+inside:
+
+\begin{proposition}[exact fixed point]
+{\rm[theorem]} $R_p(\mathrm{PPP}(\rho))=\mathrm{PPP}(p\rho)$; at the level of the
+intrinsic order law, the sprinkling is an \emph{exact} fixed point of deletion---and by
+BHS uniqueness, the only Lorentz-invariant one.
+\end{proposition}
+
+\begin{proposition}[global attractor, at the level of laws]
+{\rm[theorem]} By the thinning-limit theorems~\cite{Kallenberg2017}, iterated
+compensated thinning converges \emph{in distribution} to a Cox process directed by the
+limiting sample intensity; for an \emph{ergodic} invariant process of finite intensity
+$\lambda$ the spatial ergodic theorem makes the directing measure the constant
+$\lambda$, and $\mathrm{Cox}(\lambda)=\mathrm{PPP}(\lambda)$. The fixed point is not
+only unique: it attracts the whole class, in law. The finite-intensity qualifier is
+load-bearing but harmless: an invariant cluster dressing would need an invariant
+probability measure on a non-compact Lorentz orbit, and the only invariant probability
+on $\mathbb{M}^d$ is $\delta_0$ (Weil uniqueness; Appendix~\ref{app:proofs})---the same
+non-compactness of layer~1 protects the attractor.
+\end{proposition}
+
+\begin{proposition}[no relevant direction, with eigenvalues]
+{\rm[theorem; proof in Appendix~\ref{app:proofs}]} The compensated step acts on
+factorial moment densities as \emph{pure dilation of arguments},
+$\rho_k\mapsto\rho_k(\cdot/a)$ with $a=p^{1/d}$: homogeneous truncated-correlation
+directions $g\sim|x|^{-\alpha}$ are eigenfunctions with eigenvalue
+$p^{\alpha/d}<1$ for every $\alpha>0$---all decaying tails are irrelevant with explicit
+rate; the constant direction ($\alpha=0$) is intensity superselection (a Cox mixture),
+intrinsically invisible in $\mathbb{M}^d$; the only marginal direction is $\rho$ itself,
+the unit. Growing correlations are excluded by existence, not classified [declared].
+\end{proposition}
+
+Emergence is what survives deletion (topology, forms---discrete invariants cannot
+flow); non-emergence is what deletion dilates away (correlations, scales, loops). The
+one door the programme had left open for a new scale mechanism---a relevant direction
+under thinning---is closed from inside the RG.
+
+\section{Discrete spacetime symmetries: the parity no-go and the weaker $T$ side}
+\label{sec:parity}
+
+\begin{lemma}[intrinsic action of isometries]
+\label{lem:isometries}
+{\rm[theorem]} Every isometry of $\mathbb{M}^d$ preserving time orientation (rotations,
+boosts, translations, \emph{and spatial reflections}) preserves $\prec$ and hence acts
+\emph{trivially} on intrinsic configurations: it is descriptive redundancy, not a
+symmetry of the intrinsic theory. Time-reversing isometries act as the \emph{order
+duality} $(C,\prec)\mapsto(C,\prec^{\rm op})$, generically a distinct intrinsic object.
+\end{lemma}
+
+\begin{lemma}[spatial orientation has no carrier: exhaustion]
+\label{lem:gram}
+{\rm[theorem; proof in Appendix~\ref{app:proofs}]} Any intrinsic observable is a
+measurable function of the isomorphism class of $(C,\prec,n)$; every
+time-orientation-preserving isometry---spatial reflections included---induces the
+\emph{identity} on isomorphism classes, so any putative $P$-odd intrinsic functional
+satisfies $O=-O$ and vanishes identically. No enumeration of reconstruction schemes is
+needed. Precisely: no \emph{absolute} sign exists; the \emph{relative} chirality of two
+rigid clusters is intrinsic but $P$-\emph{even} (the product of two signs survives the
+one global reflection).
+\end{lemma}
+
+\begin{lemma}[no chiral long-range order]
+\label{lem:quenched}
+{\rm[theorem for local estimators; proof in Appendix~\ref{app:proofs}]} For any two
+disjoint bounded regions and any local chirality estimators $\chi_A,\chi_B$ (functionals
+of the points in each region, odd under a time-preserving spatial reflection of that
+region), $\mathbb{E}[\chi_A\chi_B]=\mathbb{E}[\chi_A]\mathbb{E}[\chi_B]=0$ at
+\emph{every} separation: complete independence of the Poisson restriction plus local
+reflectability---exclusion by \emph{independence of the measure}, not by symmetry.
+Declared residue: estimators entangled with a common frame cluster are not covered
+[sketch]; for dynamical geometry, outside Axiom~1, the lemma does not apply---declared
+flank.
+\end{lemma}
+
+\begin{theorem}[parity no-go, strong form]
+\label{thm:parity}
+In the intrinsic class: (i) explicit $P$ violation is \emph{inexpressible} (no odd
+functional exists to write); (ii) spontaneous $P$ violation is \emph{impossible}:
+breaking requires an order parameter on which the symmetry acts, and $P$ acts trivially
+on the whole intrinsic configuration space (Lemma~\ref{lem:isometries})---a redundancy
+cannot break, in the same spirit as Elitzur's theorem~\cite{Elitzur1975}; (iii) declaring
+the internal field pseudo-scalar is operationally empty: observable $P$ violation would
+be an odd correlator between internal and \emph{geometric} handedness, and the geometric
+partner has no carrier (Lemmas~\ref{lem:gram},~\ref{lem:quenched}). Hence emergent
+chirality---correlation of internal with spatial handedness---does not emerge from the
+class, explicitly or spontaneously.
+\end{theorem}
+
+The $P$-vs-$T$ structure is \emph{asymmetric}, and the theorem must say so. $P$ has no
+carrier: the exclusion is kinematic and closes both channels. $T$ \emph{has} a carrier
+(order duality is intrinsic; $T$-odd functionals exist), the law is self-dual so all
+$T$-odd expectations vanish in statistical equilibrium, but spontaneous $T$ breaking is
+not kinematically excluded---it was \emph{measured absent}: the axis (comparability)
+emerges; the arrow does not condense and must be input [measured]. The $T$ closure is
+empirical, and is declared as such. Finally, define $C$ as an internal involution that
+is a symmetry of the action: $C$ acts non-trivially and \emph{may} break spontaneously
+(layer 3); since $P$ acts trivially, $CP\equiv C$ operationally. Any $CP$ violation
+whose content is genuinely $P$-entangled is therefore external input in this class.
+
+Three sectors of the Standard Model are precisely the three chiral ones: neutrinos,
+the generation structure, the electroweak gauge sector. In this class they are not
+missing campaigns; they are missing \emph{carriers}. And the no-go is attackable:
+any derivation of chirality from an invariant causal substrate must break
+Lemma~\ref{lem:isometries} or Lemma~\ref{lem:gram}.
+
+\section{The matter sector: what compactness protects}
+\label{sec:matter}
+
+Layer 3 is where the programme's positives live, and the theorem fixes their form. There
+is no single universal index: there is a \emph{family}---$\pi_3(G)=\mathbb{Z}$ (baryon
+charge; Bott for every simple compact $G$), $\pi_4(SU(2))=\mathbb{Z}_2$
+(Finkelstein--Rubinstein spin-statistics), representations of unbroken $H$ (the exact
+octet), $\dim G/H$ (Goldstone counting)---with one common root: \emph{compactness makes
+spectra discrete}. All four were measured in the programme
+[measured,~\cite{MatterGravityPRD,SU3PRD}], and the theorem says why the list looks like
+that and not otherwise.
+
+Two scope statements keep the section honest. First, the compact target is
+\emph{hosted, not selected}: replacing $SU(3)$ by $SU(4)$ reproduces the full
+phenomenology (ordering at finite $J$, $15/15$ gapless Goldstones, integer $B$,
+confinement with decreasing $\sigma(\beta)$) [measured]---the ``3'' is the world's
+choice, not the substrate's; whether confinement depends on the \emph{center} $Z(G)$ is
+an open, discriminating test ($G_2$, trivial center, queued). Second, existence is
+dynamical: the ordered vacuum at finite coupling is a measurement, not a corollary.
+
+This division now survives quantization. Applying the forced covariant (Sorkin--Johnston)
+prescription (Sec.~\ref{sec:predictions}, P1) to the orientation field over the
+\emph{measured} ordered vacuum preserves the Goldstone multiplet: the quantum
+level-splittings track the classical ones (ratios $\approx1.1$--$1.4$ against a $3\times$
+anomaly threshold, robust to a fourfold change of mode count) and the relativistic branch
+degrades on a disordered background, so the ordered vacuum is the carrier [measured,
+pre-registered]. Crucially the SJ spectrum stays non-degenerate (minimum gap
+$\sim\!10^{-3}$), so the emergent stabilizer is abelian $U(1)^K$ and \emph{no compact fiber
+is created}: the quantization respects the postulated $G$ without generating it. Axiom~2
+therefore remains a postulate---a delimitation, now measured rather than assumed---and the
+rule ``forms are derived, groups are postulated'' holds intact into the quantum sector.
+
+\section{The two external inputs, each with a proof of necessity}
+\label{sec:externals}
+
+The frozen theory is: \emph{two axioms plus two external inputs with proof}. ``With
+proof'' means: for each input we can demonstrate the class does not supply it---so
+importing it is not an omission but a theorem-backed boundary of the theory.
+
+\subsection{The Skyrme-type core cost}
+\label{sec:skyrme}
+
+The Skyrme \emph{operator} is not external: the fourth order of the $SU(2)$ link cosine
+under the Poisson-isotropic link measure contains it with locked coefficient,
+\begin{equation}
+E^{(4)}=-\frac{3a^4}{5760}\,S+\frac{a^4}{2880}\,K,\qquad
+K=\sum_{\mu\nu}|c_\mu\times c_\nu|^2,
+\end{equation}
+with $S=(\mathrm{Tr}\,G)^2$, $G_{\mu\nu}=c_\mu\!\cdot\!c_\nu$; a cubic lattice is exactly
+blind to $K$ (this is why lattice Skyrme terms are added by hand), and the same isotropy
+that gives Lorentz invariance generates the operator [measured, with exact identities].
+What is external is its \emph{dominance}---the positive net quartic that Derrick
+stability needs---and the necessity proof now has two independent halves:
+
+\emph{Tree level} [theorem]: $K\le(1-\tfrac1d)S$ is a pointwise Cauchy--Schwarz identity
+on the PSD current Gram, saturated by the hedgehog; the net quartic is
+$-(a^4/384)\langle|\ell|^4\rangle\le0$ under \emph{any} link measure, because its sign
+descends from the cosine series, not from geometry. No regime exists to search.
+
+\emph{One loop} [measured, $\sim$130$\sigma$]: integrating the Gaussian fluctuations
+around constant-current backgrounds on the causal substrate (spatial-torus sprinkling,
+per-link transporters realizing the two SC channels exactly; the abelian channel has
+$K=0$, the hedgehog-frame channel $K=6g^4$ at matched $S=9g^4$) yields the radiative
+channel coefficients
+\begin{align}
+c_K^{\rm loop}&=-0.01296\pm0.00010,\nonumber\\
+c_S^{\rm loop}&=-0.00669\pm0.00007,
+\end{align}
+volume-stable across sizes. The loop generates the Skyrme channel with the
+\emph{anti-stabilizing} sign, and its hedgehog quartic is itself negative; since the
+loop term is coupling-independent while the (negative) tree term scales with $J$, the
+net hedgehog quartic is negative \emph{for every} $J\ge0$---there is no window at any
+coupling, ordered or not. The loop is in fact more hedgehog-saturating than the tree
+(channel ratio $\approx2.3$ against the tree's $5/9$), and the contrast inverts on the
+grid: the cubic control gives a weakly \emph{positive} $c_K^{\rm loop}$
+($+0.001$)---the same isotropy that generates the operator at tree level kills its
+dominance radiatively.
+
+The stabilizer (a non-cosine core cost) is therefore a genuine axiom-level input of the
+matter sector, located by impossibility arguments at both orders rather than by failed
+searches.
+
+\subsection{The single unit}
+
+The second external input is the conversion of the lattice unit to SI. The thinning RG
+(Sec.~\ref{sec:thinning}) shows $\rho$ is the unique marginal direction and pure gauge
+at the level of the intrinsic law: the theory has exactly one unit, so exactly one
+number must be imported---as in any physical theory---while every internal ratio is
+locked (measured examples across the programme: the Skyrme length $a/\sqrt{120}$, the
+emergent $G\propto1/K$, $m_A\propto\sqrt\rho$). The structural point is not that the
+input is avoidable but that there is provably only \emph{one} of it.
+
+\section{Where the principle does not deliver}
+\label{sec:vaccine}
+
+An exclusion principle earns trust by failing to explain things it should not explain.
+
+\textbf{Horizon entropy, two faces [measured].} The geometric face obeys the principle's
+pattern: the horizon-molecule count reproduces $S\propto A$ in $d=2,3,4$ with the
+correct $\rho^{1/2}$ scaling and $T$-independence---the \emph{form} emerges; the
+coefficient (the $1/4$) is a lattice number, external, exactly as the scale section
+predicts. The matter face does \emph{not}: the mutual information of the ordered
+internal field across the same horizon is super-area ($I\sim L^{3.4}$, compatible with
+volume), driven by the layer-1 non-locality (boundary-crossing links grow $\sim L^{4.2}$).
+The binary tension that forbids the photon also breaks the area law for matter
+entropy---the principle predicts its own failure mode here, but it \emph{is} a failure
+of the area law, and we display it rather than absorb it. The covariant quantization
+refines this face without overturning it: the spacelike entanglement entropy of the SJ
+field across the same horizon, computed with a declared UV number-cutoff, \emph{localizes}
+on the boundary---the truncated entropy is window-independent (ratio $0.93$ against $4.0$
+for the untruncated volume law), recovering the \emph{qualitative} content of an area law
+that the classical mutual information had lost. But the quantitative scale is set by the
+cutoff, not the geometry: the exponent tracks the truncation number $n\propto N_O^{3/4}$
+and stays sub-area ($\kappa=1.57\pm0.02$), while the untruncated law reproduces the
+classical super-volume [measured]. Approach to a genuine area law from below is not
+excluded (the curvature rises with region size), and the discriminating grid
+$L\in\{4,6\}$ is a declared open frontier. We record the refinement without upgrading it:
+between a full quantum rescue of the area law and the raw matter super-area, the
+measurement sits in the middle.
+
+\textbf{Dynamics.} Ordering temperatures, phase diagrams, the first-order character of
+the $SU(3)$ transition: measured, not derived. The class fixes permissions and forms.
+
+\textbf{Quantum structure.} The substrate is classical-statistical, and the only
+quantization compatible with the class is covariant---canonical quantization has no
+carrier (P1), so the Sorkin--Johnston (SJ) prescription is forced. That door is now
+measured to open: on the programme's box substrate the SJ vacuum is stable (conjugate
+eigenvalue pairs to $10^{-15}$) and its infrared branch is relativistic, $\omega=c|k|$
+with $c=0.96$ ($d=2$) and $0.90$ ($d=4$), a massive control tracking to $\sim\!2\%$
+[measured, pre-registered]. The structural cost is exactly \emph{one bit}: the
+retarded/advanced choice conjugates the vacuum anti-unitarily (a Wigner $T$-type
+symmetry), so every spectral and entropy observable is bit-even and the campaign never
+sweeps it [theorem]---the same bit that carries the complex structure the GOE corollary
+(Sec.~\ref{sec:predictions}) sees as \emph{not} emergent. What the core still says
+nothing about is the \emph{value} of $\hbar$, collapse, and measurement.
+
+\section{Predictions}
+\label{sec:predictions}
+
+The core generates consequences beyond the four known negatives; each is falsifiable
+inside or outside the programme.
+
+\begin{enumerate}
+\item[P1.] \emph{Canonical quantization has no carrier; covariant quantization is
+forced.} Everything defined on spacelike surfaces falls at once: ADM variables,
+Wheeler--DeWitt wavefunctionals, Hamiltonian lattice gauge theory, spin networks as
+fundamental kinematics, spatial Wilson lines. What remains is histories/covariant
+(Sorkin--Johnston, decoherence functionals). \emph{Now partly measured}: the forced SJ
+quantization has a stable vacuum with a relativistic infrared branch on the programme's
+substrate, at the cost of one $T$-bit (Sec.~\ref{sec:vaccine}) [measured].
+\item[P2.] \emph{No $P$ violation in pure-geometry observables, ever}---including
+spontaneous. A chiral gravitational-wave background of substrate origin, or $P$-odd
+primordial correlators of the geometric sector, are impossible in the class.
+\item[P3.] \emph{No dynamical baryogenesis.} $B$ is exactly conserved ($\pi_3$); creation
+channels measured dead; the $P$-entangled content of $CP$ is external. Matter--antimatter
+asymmetry is initial condition or input.
+\item[P4.] \emph{No magnetic monopoles, twice}: no emergent $U(1)$, and $\pi_2(G)=0$ for
+every Lie group (cosets with $\pi_2\neq0$ would need an unbroken $U(1)$---the same closed
+door).
+\item[P5.] \emph{No emergent stable particle without a discrete topological index; no
+continuous emergent charge} (the Wigner pattern, layer 3).
+\item[P6.] \emph{Hierarchy of possible spacetime symmetry breakings}: only sectors with
+carriers can ever condense---$T$ (order duality) or frame/boost alignment; never $P$.
+\item[P7.] \emph{Chirality, in any order-based substrate, can only be a relational
+phase} (domains, $\mathbb{Z}_2$ walls, restorable), never a law. The exact, never-restored
+chirality of the neutrino is structural evidence against any causal-substrate origin of
+chirality.
+\end{enumerate}
+
+Two bonus corollaries of the same layers, upgraded from measurements: the causal
+spectral statistics must be the \emph{orthogonal} (GOE) class---$T$-statistical symmetry
+plus no complex structure (no photon) force real symmetric operators [sketch; measured
+$\langle r\rangle\to0.53$]; and any unsigned counting observable must be an \emph{even}
+function of an applied field-like parameter, fixing the measured $H^2$ leading behaviour
+of interval anisotropies [sketch; measured $R^2>0.98$].
+
+\section{The open frontiers}
+\label{sec:open}
+
+\begin{table}[t]
+\caption{\label{tab:open}The honest list. ``Open'' means: declared, named, and either
+queued or blocked on a stated obstacle.}
+\begin{ruledtabular}
+\begin{tabular}{clp{4.2cm}}
+\# & Frontier & Status \\
+\colrule
+1 & pentagonal loop lattices & the single combinatorial flank (rank-frustrated
+generators); named target \\
+2 & Axiom 2 (internal field) & postulated; measured that the SJ vacuum creates no
+compact fiber---delimitation, not derivation \\
+3 & Skyrme stabilizer & external; necessity proved at tree (theorem) and one loop
+(measured) \\
+4 & quantization / $\hbar$ & SJ door measured open (stable vacuum, relativistic branch,
+one $T$-bit); value of $\hbar$, collapse open \\
+5 & entropy coefficient $1/4$ & external (lattice numbers measured) \\
+6 & joint substrate+matter RG & analytic EFT; old open item \\
+7 & CPT of the emergent EFT & assumed from continuum \\
+8 & arrow of time ($T$ side) & closed empirically, not kinematically \\
+9 & dynamical geometry & outside Axioms 1--2 (Lemma~\ref{lem:quenched} does not
+cover it) \\
+10 & gravitational dynamics & not derived (the emergent Newtonian sector is what
+exists) \\
+\end{tabular}
+\end{ruledtabular}
+\end{table}
+
+Table~\ref{tab:open} is the boundary of the theory as of this writing. Item 1 is the
+only place where the combinatorial theorems of Sec.~\ref{sec:trichotomy} leave a
+constructive escape; items 2 and 4 are where new physics would enter if it enters;
+items 5--7 are the technical debts; items 8--10 are the declared scope walls.
+
+\section{How to break this theory}
+\label{sec:conclusion}
+
+The core is two axioms, one pair lemma, one three-layer boundary theorem, a
+combinatorial trichotomy, a thinning RG, a parity no-go, and two proven-external inputs.
+Everything else in the programme is either a corollary, a measurement, or listed in
+Table~\ref{tab:open}. Because the core is deductive, it is attackable at named joints:
+an emergent photon on an invariant causal substrate must break
+Theorem~\ref{thm:T1}--\ref{thm:T4} through the pentagonal flank or falsify
+Lemma~\ref{lem:pair}; emergent chirality must break Lemma~\ref{lem:isometries} or
+\ref{lem:gram}; an emergent scale must exhibit a relevant direction under thinning,
+against Sec.~\ref{sec:thinning}; a radiatively stabilized Skyrmion must overturn a
+$130\sigma$ measurement or find physics beyond one loop with an inverted sign. A theory
+that tells you exactly where to hit it is doing its job; this one, at least, now fits on
+a page.
+
+\appendix
+
+\section{Proofs of the base lemmas}
+\label{app:proofs}
+
+\emph{Pair lemma (timelike half).} The orthochronous Poincar\'e group acts transitively
+on ordered timelike pairs of equal proper time (translate $x$ to the origin, boost
+$y-x$ to $(\Delta\tau,\vec0)$, rotate), with stabilizer $SO(d-1)$: the complete
+invariant of an ordered causal pair is $\Delta\tau$, and the order itself is the sign.
+The Alexandrov interval has volume $c_d\Delta\tau^d$, so
+$N\sim\mathrm{Poisson}(\rho c_d\Delta\tau^d)$; the longest-chain limit exists by
+Kingman's subadditive ergodic theorem, with constant $m_d$
+bounded in~\cite{BrightwellGregory1991} ($m_2=2$ exactly, via Ulam's problem).
+
+\emph{Pair lemma (spacelike half).} Place the pair at $0$ and $(0,s,\vec0)$. The
+stabilizer of the spacelike separation vector is the orthogonal group of its Lorentzian
+complement and contains the transverse reflections
+$(t,x^1,\vec u)\mapsto(t,x^1,R\vec u)$, $R\in O(d-2)$, $\det R=-1$: time-orientation
+preserving, spatial determinant $-1$. Each is an order isomorphism of every realization
+and preserves the Poisson law, so every intrinsic statistic of the pair-plus-environment
+is invariant under it---no transverse orientation is intrinsic. Distance
+reconstructions~\cite{RideoutWallden2009} are symmetric functions of counts, and a
+configuration known through mutual distances is fixed only up to the full orthogonal
+group (Gram rigidity), reflections included.
+
+\emph{Exhaustion (Lemma~\ref{lem:gram}).} Let $O$ be a measurable function of the
+isomorphism class of $(C,\prec,n)$ and $g$ any time-orientation-preserving isometry,
+spatial reflections included. Then $g$ preserves cones and time orientation, so
+$x\prec y\Leftrightarrow gx\prec gy$: $g$ realizes an isomorphism
+$(C_\Phi,\prec,n)\cong(C_{g\Phi},\prec,n\circ g^{-1})$, whence $O(g\Phi)=O(\Phi)$
+realization-wise. The induced action of $P$ on intrinsic data is the identity; a
+$P$-odd $O$ satisfies $O=-O\equiv0$. $\square$
+
+\emph{No chiral LRO (Lemma~\ref{lem:quenched}).} Let $A,B$ be disjoint bounded regions
+and $\chi_A$ a functional of $\Phi\cap A$ odd under a Lebesgue-preserving,
+time-preserving spatial reflection $r_A$ of $A$. Complete independence of the Poisson
+process gives $\mathbb{E}[\chi_A\chi_B]=\mathbb{E}[\chi_A]\mathbb{E}[\chi_B]$;
+invariance of the restricted law under $r_A$ gives
+$\mathbb{E}[\chi_A]=\mathbb{E}[\chi_A(r_A\Phi_A)]=-\mathbb{E}[\chi_A]=0$. $\square$
+
+\emph{$\delta_0$ lemma.} The orbits of $SO^{+}(d-1,1)$ on $\mathbb{M}^d$ are $\{0\}$,
+the mass shells, the light-cone components, and the one-sheeted hyperboloids; each
+non-trivial orbit is $G/H$ with $G$ semisimple (unimodular) and $H$ unimodular, so by
+Weil's uniqueness theorem~\cite{Folland1995} it carries a $G$-invariant measure unique
+up to scale---the standard Lorentz-invariant measure, of infinite total mass. No
+non-trivial orbit supports an invariant probability; disintegrating any invariant
+probability over the orbit space puts all mass on $\{0\}$: $\mu=\delta_0$. $\square$
+
+\emph{Thinning fixed point and eigenvalues.} On Laplace functionals, thinning acts as
+$L\mapsto L[-\log(1-p(1-e^{-f}))]$; for $\mathrm{PPP}(\rho)$,
+$L[f]=\exp(-\rho\!\int(1-e^{-f}))$, thinning gives intensity $p\rho$ and the
+compensating contraction $S_{p^{1/d}}$ restores it: $T_p\,\mathrm{PPP}(\rho)=
+\mathrm{PPP}(\rho)$ exactly. On factorial moment densities, thinning multiplies
+$\rho_k$ by $p^k$ and $S_a$ maps $\rho_k(x)\mapsto a^{-kd}\rho_k(x/a)$; with $a^d=p$
+the amplitudes cancel and $\rho_k\mapsto\rho_k(\cdot/a)$---pure argument dilation.
+Homogeneous truncated directions $g=|x|^{-\alpha}$ obey $T_p\,g=p^{\alpha/d}g$.
+$\square$
+
+\begin{thebibliography}{99}
+\bibitem{MatterGravityPRD} M. Alves Mendes, \emph{Topological matter and emergent
+gravitation from a causal network}, companion paper, submitted to Phys. Rev. D (2026);
+source at \url{https://github.com/mendesengproj-blip/TEIC}.
+\bibitem{SU3PRD} M. Alves Mendes, \emph{Colour ferromagnetism in a causal network:
+confinement, the meson octet, and the order of the transition}, companion paper,
+submitted to Phys. Rev. D (2026); source at
+\url{https://github.com/mendesengproj-blip/TEIC}.
+\bibitem{WenComplement} M. Alves Mendes, \emph{Why Lorentz-invariant causal sets cannot
+support an emergent $U(1)$: a causal complement to string-net theory}, companion paper,
+submitted to Class. Quantum Grav. (2026); source at
+\url{https://github.com/mendesengproj-blip/causal-substrate-core}.
+\bibitem{BHS2009} L. Bombelli, J. Henson, R. D. Sorkin, \emph{Discreteness without
+symmetry breaking: a theorem}, Mod. Phys. Lett. A \textbf{24}, 2579 (2009).
+\bibitem{Malament1977} D. B. Malament, \emph{The class of continuous timelike curves
+determines the topology of spacetime}, J. Math. Phys. \textbf{18}, 1399 (1977).
+\bibitem{HKM1976} S. W. Hawking, A. R. King, P. J. McCarthy, \emph{A new topology for
+curved space-time which incorporates the causal, differential, and conformal
+structures}, J. Math. Phys. \textbf{17}, 174 (1976).
+\bibitem{Surya2019} S. Surya, \emph{The causal set approach to quantum gravity},
+Living Rev. Relativ. \textbf{22}, 5 (2019).
+\bibitem{LevinWen2005} M. A. Levin, X.-G. Wen, \emph{String-net condensation: A physical
+mechanism for topological phases}, Phys. Rev. B \textbf{71}, 045110 (2005).
+\bibitem{Wigner1939} E. Wigner, \emph{On unitary representations of the inhomogeneous
+Lorentz group}, Ann. Math. \textbf{40}, 149 (1939).
+\bibitem{Janson2011} S. Janson, \emph{Poset limits and exchangeable random posets},
+Combinatorica \textbf{31}, 529 (2011).
+\bibitem{Brightwell1993} G. Brightwell, \emph{Models of random partial orders}, in
+\emph{Surveys in Combinatorics 1993}, Cambridge Univ. Press (1993).
+\bibitem{RideoutSorkin2000} D. P. Rideout, R. D. Sorkin, \emph{Classical sequential
+growth dynamics for causal sets}, Phys. Rev. D \textbf{61}, 024002 (2000).
+\bibitem{ABBJ1994} N. Alon, B. Bollob\'as, G. Brightwell, S. Janson, \emph{Linear
+extensions of a random partial order}, Ann. Appl. Probab. \textbf{4}, 108 (1994).
+\bibitem{BollobasBrightwell1997} B. Bollob\'as, G. Brightwell, \emph{The structure of
+random graph orders}, SIAM J. Discrete Math. \textbf{10}, 318 (1997).
+\bibitem{Kallenberg2017} O. Kallenberg, \emph{Random Measures, Theory and Applications},
+Springer (2017).
+\bibitem{Elitzur1975} S. Elitzur, \emph{Impossibility of spontaneously breaking local
+symmetries}, Phys. Rev. D \textbf{12}, 3978 (1975).
+\bibitem{BrightwellGregory1991} G. Brightwell, R. Gregory, \emph{Structure of random
+discrete spacetime}, Phys. Rev. Lett. \textbf{66}, 260 (1991).
+\bibitem{RideoutWallden2009} D. Rideout, P. Wallden, \emph{Spacelike distance from
+discrete causal order}, Class. Quantum Grav. \textbf{26}, 155013 (2009).
+\bibitem{Folland1995} G. B. Folland, \emph{A Course in Abstract Harmonic Analysis},
+CRC Press (1995), Thm. 2.49.
+\end{thebibliography}
+
+\end{document}

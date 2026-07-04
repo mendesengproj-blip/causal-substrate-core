@@ -1,0 +1,284 @@
+% N3 WEN_COMPLEMENT --- short perspective paper of the FRONTEIRA_COMPACTA line.
+% Gate: N0(c) (signature statement) + N0' (adversarial stress test) -- both green.
+% Claim discipline (charter): theorem about the CLASS (Axioms 1-2), never "Nature
+% obeys"; every measured input cited to the campaign that measured it; open flanks
+% declared in the final section.  Compiles with pdflatex+bibtex (revtex4-2).
+\documentclass[aps,prd,reprint,nofootinbib,superscriptaddress,floatfix]{revtex4-2}
+\usepackage{amsmath,amssymb}
+\usepackage{bm}
+\usepackage{booktabs}
+\usepackage{hyperref}
+
+\begin{document}
+
+\title{Why Lorentz-invariant causal sets cannot support an emergent $U(1)$:\\
+a causal complement to string-net theory}
+
+\author{Miqueias Alves Mendes}
+\email{mikalvesm@gmail.com}
+\affiliation{Independent Researcher, Ibiapina, Cear\'a, Brazil}
+\date{\today}
+
+\begin{abstract}
+Two research programmes derive gauge structure rather than postulate it. In condensed
+matter, string-net condensation produces emergent photons as collective modes of loop
+degrees of freedom on a lattice; sixty years of emergence phenomenology stand behind it.
+In quantum gravity, causal set theory replaces spacetime by a Lorentz-invariant discrete
+order; its kinematics recovers dimension, curvature and d'Alembertians---but no causal
+substrate has ever produced an emergent photon. We argue these two facts have a single
+explanation, and that it is a theorem about signature rather than a technical gap.
+String-net condensation needs three structures: finite valence, closed loops of finite
+dimension, and an oriented spacelike 2-cell to carry magnetic flux. A Lorentz-invariant
+causal substrate refuses all three, each by the non-compactness of the boost: every
+invariant rule on a Poisson sprinkling has infinite expected valence (a Campbell--Mecke
+theorem on the hyperboloid $H^{d-1}$); the measured escape routes fail a binary
+alternative (finite valence \emph{or} finite-dimensional loops, never both); and the
+causal order carries time with sign but space without sign and without structure, so the
+magnetic 2-cell has no carrier---a prediction verified directly (interval `diamonds' are
+$100\%$ electric). The exact boundary between the two worlds is the \emph{definiteness of
+the metric signature}: separation orbits are compact spheres for $O(d)$ and infinite-volume
+quadrics for $O(p,q)$, so divergence is \emph{chosen} on the Euclidean side and
+\emph{forced} on the Lorentzian side. Wick rotation is precisely the operation that
+crosses the boundary, and an order cannot cross it and remain an order. The statement
+explains a negative: why condensed-matter emergence does not transport to causal
+substrates---and it tells any future emergent-photon claim exactly which lemma it must
+break.
+\end{abstract}
+
+\maketitle
+
+\section{Two emergence programmes that never meet}
+
+Emergence of gauge structure is no longer a speculation. In condensed matter it is a
+theorem-grade phenomenology: local bosonic lattice models whose low-energy sectors contain
+deconfined $U(1)$ gauge fields, with the photon as a collective mode of condensed
+string-nets~\cite{LevinWen2005,LevinWenColloquium,WenBook,MotrunichSenthil2002}, and with
+the robustness of the emergent gauge symmetry understood since
+Foerster--Nielsen--Ninomiya~\cite{FNN1980}. In quantum gravity, the causal set programme
+replaces the spacetime continuum by a locally finite partial
+order~\cite{BLMS1987,Surya2019}; sprinkled at Poisson density it is the unique
+Lorentz-invariant discretization~\cite{BHS2009}, and its kinematics demonstrably encodes
+dimension, proper time, curvature, and horizon areas~\cite{Surya2019,Barton2019}.
+
+The two programmes have an obvious meeting point---derive light on the causal
+substrate---and a striking non-meeting record: no construction on a Lorentz-invariant
+causal set has produced an emergent photon, ours included. Our own programme measured
+this negative from several independent directions before understanding it (Sec.~III).
+This perspective argues the non-meeting is structural, states the theorem that separates
+the two worlds, and locates the boundary exactly: it is the \emph{signature of the
+metric}, not the discreteness, not the dimension, and not a lack of ingenuity.
+
+Explaining a negative is rare and useful. The statement below explains simultaneously why
+string-net emergence \emph{works} in condensed matter and why it \emph{cannot transport}
+to Lorentz-invariant causal substrates---one theorem, two sides---and it converts years
+of failed constructions into corollaries.
+
+\section{What emergent light needs}
+
+Stripped to its skeleton, string-net condensation~\cite{LevinWen2005,LevinWenColloquium}
+requires of its substrate:
+
+\begin{enumerate}
+\item \textbf{Finite valence.} The degrees of freedom live on the links of a graph whose
+vertices have finitely many neighbours; the Hamiltonian is a sum of local terms. Finite
+valence is what makes ``local'' meaningful and Hilbert spaces finite-dimensional per
+site.
+\item \textbf{Loops of finite dimension.} The gauge-invariant configurations are closed
+strings; the deconfined phase is a condensate of arbitrarily large loops built from
+\emph{finite-dimensional} local loop moves (plaquettes). Without a finite plaquette
+structure there is nothing to condense and no flux to quantize. (In $2{+}1$ dimensions
+compact $U(1)$ still confines by monopole proliferation~\cite{Polyakov1977}; the
+deconfined photon needs the loop structure \emph{and} enough dimensions---the
+requirement is necessary, not sufficient.)
+\item \textbf{An oriented spacelike 2-cell.} The magnetic field is a flux: $B$ is
+defined by the holonomy around an oriented spacelike plaquette. A phase with photons
+needs both electric (timelike) and magnetic (spacelike) 2-cells, with orientation.
+\end{enumerate}
+
+Condensed matter provides all three for free, because its substrate is a fixed spatial
+lattice: a graph with finite valence, plaquettes by construction, and an orientation
+inherited from the embedding in $\mathbb{R}^3$. The question is what a Lorentz-invariant
+causal substrate can offer in their place.
+
+\section{What the causal substrate refuses, layer by layer}
+
+Fix the class: a Poisson sprinkling of $\mathbb{M}^d$ with its induced order
+$(\mathcal{C},\prec)$, and any \emph{intrinsic} rule---a measurable functional of order
+and counting only, no embedding data. This is the standard causal set kinematics; Poisson
+is not optional but forced by invariance~\cite{BHS2009}. Three layers, in decreasing
+generality; each kills one string-net requirement.
+
+\subsection{Layer 1: infinite valence is forced (theorem)}
+
+Any invariant pairwise quantity of a causally related pair is a function of the proper
+time $\Delta\tau$ alone. The locus of ``neighbours at fixed $\Delta\tau$'' is the orbit
+of the Lorentz group, the hyperboloid $H^{d-1}\!=\mathrm{SO}^+(d\!-\!1,1)/\mathrm{SO}(d\!-\!1)$,
+of \emph{infinite} invariant volume. By the Campbell--Mecke formula, the expected degree
+of any nontrivial invariant connection rule $q(\Delta\tau)$ is
+\begin{equation}
+\langle z\rangle \;=\; \rho\,\mathrm{Vol}(H^{d-1})\!\int_0^\infty\! \Delta\tau^{\,d-1}
+q(\Delta\tau)\,d\Delta\tau \;=\; \infty ,
+\label{eq:layer1}
+\end{equation}
+for every $q$ that is not almost-everywhere zero. The argument closes non-pairwise rules
+as well (via the Palm calculus, up to the covering relation), and rules based on interval
+cardinality $N(i,j)$ are $\Delta\tau$ in disguise
+($\mathbb{E}[N|\Delta\tau]\propto\Delta\tau^d$ is a bijection). This is the familiar
+non-locality of causal set links~\cite{Surya2019}, sharpened into an impossibility:
+\emph{requirement 1 (finite valence) is unattainable for any invariant rule on the
+sprinkling.} Not hard to attain---unattainable.
+
+\subsection{Layer 2: the measured escape routes and the binary alternative}
+
+Layer 1 has stated hypotheses (Poisson measure; rules up to the covering relation), and
+we spent the programme's experimental effort trying to escape through them. The record
+is a binary alternative, measured across seven independent substrate campaigns: a
+substrate evades the \emph{boost} divergence or the \emph{loop} requirement, never both.
+
+\begin{itemize}
+\item \emph{Invariant repulsion} (Mat\'ern-II thinning in the invariant interval
+$s^2$): $\langle z\rangle$ still diverges for every exclusion parameter---the
+Lorentz-invariant exclusion volume is a non-compact band along the cone. Loops track
+the Poisson control.
+\item \emph{Invariant long-range percolation} $p(\Delta\tau)=\min\{1,(\Delta\tau/
+\Delta\tau_0)^{-\sigma}\}$: for \emph{all} $\sigma$ scanned, $\langle z\rangle$ diverges
+\emph{and} 4-cycles stay below the random control---the rule decays in the wrong
+variable, because the invariant $\Delta\tau$ cannot cut the boost direction. The only
+family that fails both barriers at once, everywhere in parameter space.
+\item \emph{Non-Poisson growth} (classical sequential growth): the degree saturates
+(escapes the boost) but the transitive reduction has provably zero clustering and
+sub-mean-field 4-cycles---tree-like, no finite loop structure to condense.
+\item \emph{Simplicial/CDT-like kinematics}: the only family whose 1-skeleton carries
+saturating loops (4-cycles $\approx 0.145$, transitivity $\approx 0.30$ in the
+two-dimensional flipped ensemble)---but its finite valence is the Euler identity of a
+\emph{foliated} triangulation. Its three-dimensional and stacked four-dimensional
+versions were measured mean-field (clustering decays as $N^{-0.33}$); and the foliation
+itself is the point (next item).
+\item \emph{Explicit foliation} (anisotropic, Ho\v{r}ava-type): the one substrate that
+passed both barriers---by construction, because a preferred foliation \emph{breaks
+Lorentz invariance}. The criticality it sustains was measured to be that of a stacked
+three-dimensional Heisenberg lattice (exponent distance to the known lattice class
+$0.89\sigma$): a known spatial lattice in disguise, i.e., the condensed-matter side of
+the boundary, not an escape through it.
+\end{itemize}
+
+The alternative is exhaustive in everything measured so far: \emph{finite valence or
+finite-dimensional loops---an invariant causal substrate never offers both.}
+Requirement 2 falls.
+
+\subsection{Layer 3: the magnetic 2-cell has no carrier}
+
+Requirement 3 fails for a reason deeper than valence, and it was measured before it was
+understood. The causal order carries \emph{time with sign} (the relation is directed;
+interval counting estimates $\Delta\tau$ with its orientation) and \emph{space without
+sign and without structure}: a spacelike pair contributes one bit (incomparability), and
+every spatial datum beyond it is a statistical reconstruction from third
+parties---unsigned Gram data, determining configurations at best up to the \emph{full}
+orthogonal group $O(d{-}1)$, reflections included. Antichains, the discrete carriers of
+``space,'' are order-theoretically amorphous: their only intrinsic datum is cardinality.
+
+The electric field survives this: $E$ is flux through a \emph{timelike} 2-cell, and the
+causal interval (``diamond'') is both structured (interval cardinality, longest chains)
+and oriented (by the order itself). The magnetic field does not: $B$ is flux through an
+oriented \emph{spacelike} 2-cell, which fails twice---no structure (amorphous
+antichains) and no orientation (unsigned Gram data). The direct measurement agrees: on
+sprinkled Minkowski, minimal interval 2-cells are $100\%$
+electric~\cite{MatterGravityPRD}; background curvature opens a magnetic fraction only as
+$\mathrm{frac}_B\propto H^2$---itself now derived, since the count is even under
+time-reversal duality and must be even in $H$---with the flat-space value an exact zero.
+
+\section{The boundary is the signature}
+
+Each layer above traces to one fact: the boost is non-compact. That fact has an exact
+converse, and together they locate the boundary between the two emergence worlds.
+
+Let a Poisson process in $(\mathbb{R}^d, g)$ be invariant under the isometries of a
+metric of signature $(p,q)$, with any nontrivial invariant connection rule. The orbit of
+neighbours at fixed invariant separation is the quadric $\{x\cdot x=c\}$:
+
+\begin{itemize}
+\item \textbf{Definite signature} ($pq=0$; isometry group $O(d)$, compact): the orbit is
+the sphere $S^{d-1}$, of finite volume. $\langle z\rangle<\infty$ for every integrable
+profile; finite valence, geometric random graphs, genuine criticality, string-nets,
+photons. Divergence is possible but \emph{chosen} (a long-tailed profile).
+\item \textbf{Indefinite signature} ($p,q\geq 1$; $O(p,q)$ non-compact): \emph{every}
+separation quadric has infinite invariant volume, and Eq.~(\ref{eq:layer1}) applies
+verbatim: $\langle z\rangle=\infty$ for \emph{every} invariant rule. Divergence is
+\emph{forced}.
+\end{itemize}
+
+The boundary is not ``Lorentzian versus Euclidean'' but \emph{definite versus
+indefinite}; the Lorentzian case $q=1$ is simply the unique indefinite signature whose
+cone is convex enough to define an order. The asymmetry is
+\emph{forced-versus-chosen}, which is why no Euclidean counterexample can exist: on the
+definite side one can always choose a compactly supported invariant profile.
+
+This also says exactly what Wick rotation is, seen from the substrate: the operation
+that replaces $O(d-1,1)$ by $O(d)$---that \emph{compactifies the group}. Euclidean
+lattice gauge theory and condensed matter live on the definite side from the start;
+that is why their emergence machinery works. A causal order cannot Wick-rotate and
+remain an order: the order \emph{is} the Lorentzian datum. There is no rotation that
+carries a causal set to the side where string-nets condense.
+
+We note a precedent inside standard physics for reading the boundary this way: in
+Wigner's classification the discrete quantum numbers come from the compact little group,
+the continuous labels from the non-compact factors, and the mass shell that carries the
+continuous momentum label is the \emph{same} hyperboloid $H^{d-1}$ whose infinite volume
+drives Eq.~(\ref{eq:layer1}). One geometric object, two manifestations of one
+non-compactness.
+
+\section{Consequences}
+
+\textbf{For emergent-photon programmes.} Any claim of an emergent $U(1)$ on a causal
+substrate must now specify which hypothesis it breaks, because inside the class the
+route is closed at three independent layers. The options are exhaustive and each is a
+declared research programme, not a loophole: (i) \emph{break Lorentz invariance}
+(preferred foliation)---measured to reproduce known spatial-lattice universality, i.e.,
+to re-enter condensed matter rather than extend it; (ii) \emph{leave the Poisson
+measure} for genuinely dynamical geometry---the one flank our kinematic theorem does
+not cover, and where our strongest constraint is only measured (mean-field behaviour in
+every CDT-like ensemble tested), not proven; (iii) \emph{import the gauge sector}---the
+honest default of the causal set programme itself, which couples matter fields to the
+order rather than deriving them.
+
+\textbf{For horizon thermodynamics.} The same boundary has an entropic face, measured
+recently in this programme: on sprinkled Minkowski the \emph{geometric} horizon count
+(Barton \emph{et al.} molecules~\cite{Barton2019,DouSorkin2003}) obeys a clean area law
+in $d=2,3,4$---while the mutual information of an ordered \emph{matter} field across
+the same Rindler corner grows super-area ($\sim L^{3.4}$ against $L^2$ at accessible
+sizes), because the field lives on links whose corner-crossing number itself grows
+super-area. Geometry, built from the order, keeps the area law; matter, built on the
+non-local links, loses it. The non-compactness is not a technical nuisance of link
+counting; it is one boundary with connectivity, criticality, and entropy faces.
+
+\textbf{Falsifiability.} The statement is attackable at named joints: exhibit a
+Lorentz-invariant rule with finite expected valence (breaks Layer 1 and with it the
+Campbell--Mecke argument); or an invariant substrate with saturating
+finite-dimensional loops (breaks the measured binary); or an intrinsic construction of
+an oriented spacelike 2-cell from order and counting (breaks Layer 3 and the unsigned-Gram
+lemma behind it). Any one of these would be more interesting than an emergent photon.
+
+\section{Scope, and what remains open}
+
+The claim is a theorem about a class---Poisson causal sets with intrinsic rules---not
+about Nature; it is kinematic, in the same sense in which Wigner's classification is
+kinematic. Its known gaps are part of the statement. Layer 1 is rigorous for pairwise
+rules and for the non-pairwise closure via Palm calculus, up to the covering relation;
+the loop side of the binary (Layer 2) is a measured pattern across seven substrate
+families, with the combinatorial theorem (``no invariant random order carries
+finite-dimensional loop structure'') still unproven; dynamical geometry beyond the
+Poisson measure is constrained only empirically. Within the class, the conclusion is
+closed: the absence of an emergent photon on Lorentz-invariant causal sets is not an
+open problem awaiting a cleverer construction. It is the signature, doing to gauge
+structure exactly what it does to valence, to criticality, and---we now know---to the
+entropy of matter across a horizon.
+
+\begin{acknowledgments}
+The measured inputs cited as companion work are reported in
+Refs.~\cite{MatterGravityPRD,SU3PRD}, with full pre-registrations, death criteria and
+negative results in the programme's public record.
+\end{acknowledgments}
+
+\bibliography{wen_complement}
+
+\end{document}

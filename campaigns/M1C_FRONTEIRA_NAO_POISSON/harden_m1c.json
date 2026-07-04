@@ -1,0 +1,156 @@
+{
+  "lemma_A_certificate": [
+    {
+      "regime": "dense_p0.7",
+      "N": 800,
+      "p": 0.7,
+      "seeds": 6,
+      "hasse_edges": 6321,
+      "violations": 0,
+      "subset_holds": true
+    },
+    {
+      "regime": "mid_p0.2",
+      "N": 800,
+      "p": 0.2,
+      "seeds": 6,
+      "hasse_edges": 11527,
+      "violations": 0,
+      "subset_holds": true
+    },
+    {
+      "regime": "sparse_lam4",
+      "N": 1000,
+      "p": 0.004,
+      "seeds": 6,
+      "hasse_edges": 11751,
+      "violations": 0,
+      "subset_holds": true
+    },
+    {
+      "regime": "sparse_lam2",
+      "N": 1000,
+      "p": 0.002,
+      "seeds": 6,
+      "hasse_edges": 5952,
+      "violations": 0,
+      "subset_holds": true
+    }
+  ],
+  "lemma_A_holds": true,
+  "plaquette_density": [
+    {
+      "kind": "CSG_sparse_lam4",
+      "N": 500,
+      "c4_per_node": 0.07200000000000001
+    },
+    {
+      "kind": "CSG_sparse_lam4",
+      "N": 1000,
+      "c4_per_node": 0.035333333333333335
+    },
+    {
+      "kind": "CSG_sparse_lam4",
+      "N": 2000,
+      "c4_per_node": 0.021666666666666667
+    },
+    {
+      "kind": "CSG_sparse_lam4",
+      "N": 4000,
+      "c4_per_node": 0.0105
+    },
+    {
+      "kind": "grid2D",
+      "N": 484,
+      "c4_per_node": 1.822314049586777
+    },
+    {
+      "kind": "grid2D",
+      "N": 1024,
+      "c4_per_node": 1.876953125
+    },
+    {
+      "kind": "grid2D",
+      "N": 2025,
+      "c4_per_node": 1.9120987654320987
+    },
+    {
+      "kind": "grid2D",
+      "N": 3969,
+      "c4_per_node": 1.9370118417737465
+    }
+  ],
+  "T1_discharge_sweep": [
+    {
+      "p": 0.05,
+      "post_density": 0.0,
+      "c4_per_node": 1.6969999999999998,
+      "exp_growth_rate": 0.6461041865202917,
+      "is_2D_amenable": false
+    },
+    {
+      "p": 0.1,
+      "post_density": 0.0,
+      "c4_per_node": 1.6523333333333334,
+      "exp_growth_rate": 0.556181956016925,
+      "is_2D_amenable": false
+    },
+    {
+      "p": 0.15,
+      "post_density": 0.0,
+      "c4_per_node": 1.8553333333333333,
+      "exp_growth_rate": 0.4904475422586055,
+      "is_2D_amenable": false
+    },
+    {
+      "p": 0.2,
+      "post_density": 0.0,
+      "c4_per_node": 1.637,
+      "exp_growth_rate": 0.4471753971311525,
+      "is_2D_amenable": false
+    },
+    {
+      "p": 0.25,
+      "post_density": 0.001833333333333333,
+      "c4_per_node": 1.4893333333333332,
+      "exp_growth_rate": 0.4068773468704272,
+      "is_2D_amenable": false
+    },
+    {
+      "p": 0.3,
+      "post_density": 0.0005,
+      "c4_per_node": 1.3920000000000001,
+      "exp_growth_rate": 0.39261585713103575,
+      "is_2D_amenable": false
+    },
+    {
+      "p": 0.4,
+      "post_density": 0.024,
+      "c4_per_node": 1.086,
+      "exp_growth_rate": 0.33396440588118326,
+      "is_2D_amenable": false
+    },
+    {
+      "p": 0.5,
+      "post_density": 0.08166666666666667,
+      "c4_per_node": 0.9453333333333334,
+      "exp_growth_rate": 0.310148360937348,
+      "is_2D_amenable": false
+    },
+    {
+      "p": 0.7,
+      "post_density": 0.35683333333333334,
+      "c4_per_node": 0.5433333333333333,
+      "exp_growth_rate": 0.24913080251504038,
+      "is_2D_amenable": false
+    },
+    {
+      "p": 0.9,
+      "post_density": 0.7851666666666666,
+      "c4_per_node": 0.193,
+      "exp_growth_rate": 0.23424563426532263,
+      "is_2D_amenable": false
+    }
+  ],
+  "any_2D_amenable": false
+}

@@ -72,10 +72,17 @@ Pergunta-mestra: **"o que é permitido emergir?"** (não mais "o que emerge?").
 3. M4 PAPER-NÚCLEO              ✅ v0+M3 EXECUTADO 02jul26 (core_paper.pdf 8pp com Apêndice A de provas)
 4. M3 ENDURECIMENTO Apêndice B  ✅ EXECUTADO 02jul26 (exaustão pushforward; δ₀ Weil; Prop.3 nível-de-lei; autovalores)
    → LINHA 1 COMPLETA no ciclo atual (M1 ✅ M2 ✅ M3 ✅ M4 ✅); resta M1b na fila analítica
-5. DECISÃO HUMANA: venue/submissão (paper Wen N3 + paper-núcleo M4) ← GARGALO ATUAL
-6. F1 = N4: PRÉ-REGISTRO próprio        ✅ EXECUTADO 02jul26 (PRE_REGISTRO.md; campanha N4 liberada — Fase 0 é o próximo executável)
-7. F2 G₂ e F3 B=2 como validações intercaladas
-8. M1b (fresta pentagonal) — analítico
+5. DECISÃO HUMANA: venue/submissão      ✅ RESOLVIDO 03jul26 (5feffb3: core_paper→PRD, wen_complement→CQG; deltas N4 integrados em 120d5c8)
+6. F1 = N4: PRÉ-REGISTRO próprio        ✅ EXECUTADO 02jul26 (PRE_REGISTRO.md; campanha N4 COMPLETA 03jul26, RESULTADO.md consolidado)
+7. F2 G₂                               ✅ EXECUTADO 04jul26 (F2_CONTROLE_G2/: gate VERDE 8/8 + suíte espelha SU(3)/SU(4) —
+   14/14 Goldstones, B_est=8×escada-FL1 EXATA (2×índice de Dynkin, emenda pré-run), confinamento forte a u pareado
+   (χ=0.520>0, V crescente, σ decresce) ⇒ ASSINATURA DE CONFINAMENTO INDEPENDE DO CENTRO nas escalas medidas;
+   junta aberta do core_paper fecha na revisão; J_c∝dim G confirma 2/2; Mermin literal-false só no ponto de
+   crossover J=0.7, documentado + diagnóstico J=0.85 dev 0.4%; NENHUMA morte). F3 B=2 segue na fila.
+8. M1b (fresta pentagonal)              ✅ EXECUTADO 04jul26 (M1B_FLANCO_PENTAGONAL/: FLANCO CONSTRUTÍVEL — 3 exemplares
+   cristalinos [Z², Γ₃, Γ₅] com valência finita + pentágonos frustrados percolantes + NÃO-graduados; gate VERDE;
+   conjectura-forte §6(b) de M1 MORTA; T1–T4 intactos; teorema físico invariante intacto e MAIS apertado
+   [junta do flanco funde-se à junta não-Poisson]; deltas de paper ficam para a REVISÃO dos submetidos)
 ```
 
 **Aposta declarada (2 anos):** transformar o programa em teoria axiomática.

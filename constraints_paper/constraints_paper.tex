@@ -1,0 +1,403 @@
+% M7 CONSTRAINTS PAPER --- the programme in its evaluator role.
+% A perspective/methods manuscript: the boundary theorem + the classification
+% theorem (M5) + the hosting theorem (M6) + the no-gos, packaged as an explicit
+% CHECKLIST that any proposed model of emergent physics on a causal/discrete
+% order must satisfy.  Claim discipline (charter): every constraint is about the
+% CLASS, stated with its epistemic grade; the paper turns necessity theorems
+% into a decision procedure for evaluating models --- the programme stops
+% building models and starts evaluating them.  Compiles with pdflatex+bibtex
+% (revtex4-2).  DRAFT.
+\documentclass[aps,prd,reprint,nofootinbib,superscriptaddress,floatfix]{revtex4-2}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{bm}
+\usepackage{booktabs}
+\usepackage{hyperref}
+
+\newtheorem{constraint}{C}
+
+\begin{document}
+
+\title{What any causal-substrate model must satisfy:\\
+structural constraints as a checklist for emergent physics}
+
+\author{Miqueias Alves Mendes}
+\email{mikalvesm@gmail.com}
+\affiliation{Independent Researcher, Ibiapina, Cear\'a, Brazil}
+\date{\today}
+
+\begin{abstract}
+A research programme that couples matter to a Lorentz-invariant causal order has,
+over its life, accumulated a set of \emph{necessity theorems}: statements of the form
+``no model of this class can do $X$.'' We argue these theorems are more useful read
+forwards, as a checklist. Any proposal that builds physics on a causal or discrete
+order---an emergent gauge field, an emergent scale, a discrete quantum-gravity
+kinematics---must pass a fixed list of structural constraints, each a theorem with a
+named joint where it can be broken. We state eight: a valence constraint (invariant rules
+on a Poisson order have infinite expected coordination); a classification constraint
+(finite-valence, two-dimensional, loop-carrying substrates exist \emph{only} off the
+invariant class); a hosting constraint (the matter-sector form is an a priori function
+of the compact target, fixed by its bi-invariant metric); a parity constraint (no
+$P$-odd pure-geometry observable, even spontaneously); a scale constraint (the sprinkling
+is the unique thinning fixed point, with no relevant direction); an arrow constraint
+(the causal axis emerges, its orientation does not); a topology constraint (the protected
+charges are the target's matter textures, no gauge defect); and a discrete-symmetry
+constraint (a symmetry breaks iff it has an intrinsic carrier). We show how to apply the checklist by
+evaluating four candidate substrates---a foliated triangulation, a rigid crystal, an
+invariant emergent-photon claim, and a causal-set matter sector---reading off which
+constraint each meets or violates without a single simulation. The role change is the
+point: the same theorems that told one programme what \emph{it} could build, tell the
+field what \emph{any} such model must satisfy. The four constraints that are the programme's own
+classification results are proved here, with their computational certificates, so the checklist
+stands on its own.
+\end{abstract}
+
+\maketitle
+
+\section{The inverted use of a no-go}
+\label{sec:intro}
+
+Exclusion results are usually presented defensively---``we tried $X$ and proved it cannot
+happen here.'' But a sharp no-go has a second, more valuable life. Once ``no
+Lorentz-invariant causal order supports an emergent photon'' is a theorem rather than a
+failed campaign, it stops being a fact about \emph{one} programme and becomes a filter on
+\emph{every} proposal in a class: a new model that claims an emergent $U(1)$ on an
+invariant discrete order must now say which lemma it breaks, or it is already refuted.
+
+This paper collects the necessity theorems accumulated by a matter-on-causal-set
+programme~\cite{CorePaper,WenComplement,MatterGravityPRD,SU3PRD}, states them as a
+\emph{checklist}, and---for the four that are the programme's own classification results
+(Constraints~\ref{c:sna},~\ref{c:hosting},~\ref{c:topology},~\ref{c:carrier})---proves them
+here, so the checklist is self-contained: their assembly and computational certificates are
+given in Appendix~\ref{app:proofs}. The shift is deliberate: the programme stops building
+models and starts evaluating them. Each constraint below is (i) a theorem about the intrinsic
+class---a measurable functional of a causal order $(\mathcal C,\prec)$ and a compact internal
+field, no embedding coordinate---carrying its epistemic grade; (ii) equipped with a named
+\emph{joint}, the single hypothesis a counterexample must break; and (iii) applicable to a
+candidate model by inspection, without simulation. Three disciplines from the parent programme
+carry over: statements are about the class, never about Nature; grades are explicit
+([theorem], [sketch], [measured]); and the places the constraints do \emph{not} reach are
+declared, not hidden (Sec.~\ref{sec:scope}).
+
+\section{The eight constraints}
+\label{sec:constraints}
+
+Throughout, an \emph{intrinsic} rule is a measurable functional of $(\mathcal C,\prec,n)$
+alone, with $n\colon\mathcal C\to X$ a field into a compact target $X=G/H$; the substrate
+is a Poisson sprinkling of $\mathbb M^d$ unless a model declares otherwise.
+
+\begin{constraint}[valence]
+\label{c:valence}
+{\rm[theorem]} Every non-trivial invariant pairwise rule on a Poisson-sprinkled causal
+order has \emph{infinite} expected coordination. The invariant of a causal pair is the
+proper time $\Delta\tau$; the locus of neighbours at fixed $\Delta\tau$ is the hyperboloid
+$H^{d-1}=\mathrm{SO}^+(d-1,1)/\mathrm{SO}(d-1)$, of infinite volume, so by Campbell--Mecke
+$\langle z\rangle=\rho\,\mathrm{Vol}(H^{d-1})\int\Delta\tau^{d-1}q(\Delta\tau)\,d\Delta\tau
+=\infty$ for every rule $q\not\equiv0$~\cite{CorePaper}. The closure to non-pairwise rules
+holds through the Palm calculus, up to the covering relation.
+\end{constraint}
+
+\noindent\textbf{Joint.} A finite-valence \emph{and} invariant model must break
+Constraint~\ref{c:valence}: either the rule is not a function of the intrinsic pair
+invariant, or the measure is not the Poisson (Lorentz-invariant) one. ``Local'' and
+``invariant'' cannot both hold for an intrinsic rule on the sprinkling.
+
+\begin{constraint}[classification]
+\label{c:sna}
+{\rm[theorem for the named classes; App.~\ref{app:sna}]} Call a substrate
+\emph{string-net-admissible} (SNA) if its Hasse diagram has (1) finite valence, (2)
+two-dimensional amenable (polynomial) ball growth, and (3) a percolating, finite-dimensional
+space of loops---the three requirements an emergent gauge field needs~\cite{WenComplement}.
+Then \emph{SNA holds only off the invariant class}: no Lorentz-invariant nor
+covariant-random measure is SNA, while deterministic crystals and graded foliations can be.
+The exclusion assembles four proven pieces: Poisson invariance forces infinite valence
+(Constraint~\ref{c:valence}); exchangeable orders have no locally finite Hasse diagram;
+covariant sequential growth is either hyperbolic (its sparse Hasse is locally a
+Galton--Watson tree) or one-dimensional (posts cut it into finite blocks); and a
+square-generated percolating lattice is graded, hence foliated, hence not boost-invariant.
+The realizability side is explicit: a five-generator $\mathbb Z^2$ crystal and the graded
+square lattice are SNA, and both are non-invariant.
+\end{constraint}
+
+\noindent\textbf{Joint.} An emergent gauge field on a discrete order requires an SNA
+substrate; by Constraint~\ref{c:sna} that substrate is non-invariant. A model must
+therefore \emph{declare its non-invariance}---a preferred foliation or a fixed
+crystal---or exhibit an invariant SNA substrate, which would refute the classification.
+
+\begin{constraint}[hosting]
+\label{c:hosting}
+{\rm[theorem (assembled) + measured; App.~\ref{app:hosting}]} If the invariant coupling depends on $G$ only through
+its bi-invariant (Killing) metric---as $E=-J\sum(1/\dim_f)\,\mathrm{Re}\,\mathrm{Tr}
+(U_iU_j^\dagger)$ does---then the substrate cannot select among compact groups, and the
+emergent \emph{form} is an a priori function of the target $X=G/H$: the Goldstone count is
+$\dim X$, the topological charge lies in $\pi_3(G)=\mathbb Z$ (Bott), the multiplets are
+irreducible representations of the unbroken $H$ (Peter--Weyl), and strong-coupling
+confinement is present and \emph{center-independent}. Measured across $SU(3),SU(4),G_2$,
+and---decisively for the coset structure---across $O(3)=SU(2)/U(1)=S^2$, whose Goldstone
+count is $2=\dim S^2$, not $3=\dim SU(2)$~\cite{SU3PRD,MatterGravityPRD}.
+\end{constraint}
+
+\noindent\textbf{Joint.} A model that predicts a matter-sector count differing from the a
+priori values of its declared target $X$ is either adding structure the bi-invariant coupling
+cannot see---and must name the extra input---or is wrong. The group is input; the form is not.
+
+\begin{constraint}[parity]
+\label{c:parity}
+{\rm[theorem]} No $P$-odd pure-geometry observable exists in the intrinsic class, and none
+can arise spontaneously. Every time-orientation-preserving isometry, spatial reflections
+included, induces the identity on isomorphism classes of $(\mathcal C,\prec,n)$, so a
+$P$-odd functional $O$ satisfies $O=-O\equiv0$; spontaneous breaking is excluded because $P$
+acts trivially on the whole configuration space, and a redundancy cannot break (an Elitzur
+mechanism)~\cite{CorePaper}.
+\end{constraint}
+
+\noindent\textbf{Joint.} A model with emergent chirality of geometric origin must break the
+intrinsic-action lemma---exhibit an intrinsic observable on which spatial reflection acts
+non-trivially. The exact, never-restored chirality of the neutrino is structural evidence
+against any causal-order origin of chirality.
+
+\begin{constraint}[scale]
+\label{c:scale}
+{\rm[theorem]} The Poisson law is the exact fixed point and, at the level of laws, the global
+attractor of thinning (random deletion), and it has no invariant relevant direction: homogeneous
+truncated correlations $|x|^{-\alpha}$ are eigenfunctions with eigenvalue $p^{\alpha/d}<1$ for
+every $\alpha>0$; the density $\rho$ is the single marginal direction, the theory's one
+unit~\cite{CorePaper}. Emergence is what survives deletion (topology, forms); non-emergence is
+what deletion dilates away (scales, correlations, loops).
+\end{constraint}
+
+\noindent\textbf{Joint.} A model claiming an emergent length or mass scale of substrate origin
+must exhibit a \emph{relevant} direction under thinning---a correlation that grows rather than
+dilates. Absent that, every internal ratio is locked and exactly one number is imported.
+
+\begin{constraint}[arrow]
+\label{c:arrow}
+{\rm[theorem for the axis; measured for the arrow]} The comparability \emph{axis} emerges
+(order duality $\prec\leftrightarrow\succ$ is the only $T$ action, and $T$-odd expectations
+vanish in equilibrium), but the \emph{arrow}---a condensed direction of time---does not arise
+spontaneously; it is an input. Unlike parity, $T$ has a carrier (order duality is intrinsic),
+so the closure here is empirical, not kinematic, and is declared as such.
+\end{constraint}
+
+\noindent\textbf{Joint.} A model deriving a spontaneous arrow of time must exhibit the order
+parameter and its condensation; the class provides the axis for free and charges for the arrow.
+
+\begin{constraint}[topology]
+\label{c:topology}
+{\rm[theorem + certified; App.~\ref{app:topology}]} The substrate protects exactly the \emph{matter textures}
+classified by the nontrivial homotopy of the compact target---$\pi_n(X)\neq0$ gives a
+discrete, conserved charge, invariant under thinning (topology does not flow under deletion,
+a corollary of Constraint~\ref{c:scale})---and forbids every \emph{gauge defect} (monopole,
+gauge string), which needs an emergent gauge field ruled out by Constraint~\ref{c:sna}. The
+monopole is doubly forbidden: $\pi_2(G)=0$ and no emergent $U(1)$. Certified along the ladder
+$\pi_1$ (global vortex), $\pi_2$ (baby Skyrmion, charge invariant under deletion of $40\%$ of
+sites), $\pi_3$ (Skyrmion/baryon).
+\end{constraint}
+
+\noindent\textbf{Joint.} A model claiming a magnetic monopole or a topological charge in a
+sector with $\pi_n(X)=0$ must supply an emergent gauge field (against Constraint~\ref{c:sna})
+or add homotopy the target does not have. The protected sectors are the target's, and no more.
+
+\begin{constraint}[discrete symmetry]
+\label{c:carrier}
+{\rm[theorem; App.~\ref{app:carrier}]} A discrete spacetime symmetry is breakable---explicitly or
+spontaneously---if and only if it has an intrinsic \emph{carrier}, an observable of
+$(\mathcal C,\prec,n)$ on which it acts nontrivially. Parity acts as the identity (spatial
+reflection is an order isomorphism), so it has no carrier and cannot break, even spontaneously
+(Constraint~\ref{c:parity} is the $P$ case). Time reversal acts as order duality
+$\prec\leftrightarrow\succ$---a genuine carrier---so it is not kinematically protected, and its
+closure is empirical. Charge conjugation, an internal involution, has an internal carrier and may
+break dynamically. The three chiral sectors of the Standard Model are precisely the three without
+a geometric carrier.
+\end{constraint}
+
+\noindent\textbf{Joint.} A model breaking $P$ in pure geometry must exhibit a nonzero intrinsic
+$P$-odd functional---i.e.\ a carrier reflection acts on. None exists in the class; the criterion
+turns each discrete-symmetry claim into a search for its carrier.
+
+\section{Applying the checklist}
+\label{sec:apply}
+
+The constraints are meant to be run against a proposal by inspection. Table~\ref{tab:eval}
+evaluates four substrates. The verdicts are read off the constraints, not simulated.
+
+\begin{table*}[t]
+\caption{\label{tab:eval}Four candidate substrates against the checklist. Each verdict names
+the joint the model must and does open; no simulation enters---every entry is a corollary of
+Sec.~\ref{sec:constraints}.}
+\begin{ruledtabular}
+\begin{tabular}{p{3.4cm}p{13.2cm}}
+Candidate & Verdict \\
+\colrule
+Foliated triangulation (CDT-like) & SNA \emph{possible}, but breaks C\ref{c:sna} by declaring a
+preferred foliation---non-invariant by construction; re-enters lattice universality rather than
+extending it. \\
+Rigid causal crystal & SNA \emph{possible} (finite valence, percolating plaquettes), but breaks
+C\ref{c:sna} as a deterministic crystal; excluded from the invariant class by
+Bombelli--Henson--Sorkin. \\
+Invariant emergent-photon claim & Refuted unless it breaks C\ref{c:valence} \emph{or}
+C\ref{c:sna}: an invariant SNA substrate does not exist in the named classes; the proposal must
+exhibit one or name the broken lemma. \\
+Causal-set matter sector (this programme) & Passes all eight; the matter form is fixed a priori
+by C\ref{c:hosting} once a compact target is chosen; existence (ordering at finite coupling) is
+measured, not claimed to be derived. \\
+\end{tabular}
+\end{ruledtabular}
+\end{table*}
+
+Two lessons generalize. First, most ``new'' emergent-gauge proposals on discrete orders are
+already located by C\ref{c:valence}--\ref{c:sna}: they either quietly break invariance (and
+then live on the condensed-matter side of the signature boundary~\cite{WenComplement}) or they
+claim the impossible intersection and owe a broken lemma. Second, a model that survives
+C\ref{c:valence}--\ref{c:scale} still imports exactly what the constraints say it must---one
+density unit (C\ref{c:scale}), a compact target (C\ref{c:hosting}), an arrow (C\ref{c:arrow})---so
+the checklist doubles as an inventory of the \emph{necessary} external inputs of any such model.
+
+\section{Scope: where the checklist does not reach}
+\label{sec:scope}
+
+The constraints are theorems about a class, not about Nature, and their boundaries are part of
+the statement. Constraint~\ref{c:sna} is proved for the named invariance classes
+(Poisson, exchangeable, sequential-growth, embedded) with the crystalline realizability explicit;
+genuinely non-Markovian dynamical geometry---a fluctuating causal measure with memory---is outside
+it and is the one live frontier. Constraint~\ref{c:hosting} fixes the \emph{form} of the matter
+sector, not its \emph{existence} (ordering is dynamical and measured), and assumes a non-degenerate
+bi-invariant metric. Constraint~\ref{c:arrow} is empirical on the arrow. The checklist evaluates
+kinematic admissibility; it does not predict phase diagrams, and a model can pass every constraint
+and still be dynamically empty. An exclusion checklist that rejected every model would be as
+useless as one that admitted every model; this one does neither, and it says exactly where each
+verdict comes from.
+
+\section{Outlook: from a theory of a class to a theory of constraints}
+\label{sec:outlook}
+
+Eight constraints are a beginning, not a closure. Constraints~\ref{c:topology}--\ref{c:carrier}
+are already of this second generation---a classification of the protected topological sectors
+(matter textures $\pi_n(X)\neq0$ survive coarse-graining; gauge defects are forbidden) and a
+classification of the permitted spacetime-symmetry breakings by the carrier criterion ($P$
+never, $T$ empirically, $C$ dynamically)---and the same method generates more: a classification
+of the hostable compact groups (the form is fixed a priori by the bi-invariant metric), and, at
+the live frontier, the admissibility of genuinely non-Markovian dynamical geometry, the one class
+the constraints do not yet reach. Each new necessity theorem adds a row to the checklist.
+The programme's centre of gravity thereby moves from asking \emph{what emerges from this substrate}
+to asking \emph{what any substrate must satisfy to emerge a given physics}---the inverse problem,
+posed rigorously as necessity rather than open-ended synthesis. The distinctive contribution is not
+the ambition, which is old, but the method: constraints that are proved, graded, and attackable at
+named joints. A field of emergent-spacetime proposals that adopted such a checklist would spend less
+effort simulating models that a one-line corollary already excludes.
+
+\begin{acknowledgments}
+The parent measurements are reported, with full pre-registrations, death criteria and negative
+results, in the programme's public record~\cite{CorePaper,WenComplement,MatterGravityPRD,SU3PRD}.
+This manuscript reframes them as a checklist and proves the four classification constraints in
+Appendix~\ref{app:proofs}; it introduces no new measurement.
+\end{acknowledgments}
+
+\appendix
+
+\section{Proofs and certificates of the classification constraints}
+\label{app:proofs}
+
+Constraints~\ref{c:valence},~\ref{c:parity},~\ref{c:scale},~\ref{c:arrow} are proved in the
+core paper~\cite{CorePaper}. Here we give the assembly and the computational certificates for
+the four constraints that are the programme's own classification theorems. Each certificate is
+a deterministic gate over the intrinsic data; grades are stated per step.
+
+\subsection{Classification (Constraint~\ref{c:sna}): SNA $\Leftrightarrow$ non-invariant}
+\label{app:sna}
+
+\emph{Exclusion} [theorem, assembled]. Let a substrate be SNA (finite valence; amenable
+two-dimensional ball growth; percolating finite-dimensional loops). Each named invariance class
+fails one clause. (i) A Lorentz-invariant Poisson order has $\langle z\rangle=\infty$ by
+Constraint~\ref{c:valence}---clause 1 fails. (ii) An exchangeable random order has a
+conditionally constant covering density (Aldous--Hoover/Janson), so its Hasse diagram is either
+a.s.\ empty or of infinite expected degree---clause 1 fails. (iii) Covariant sequential growth
+splits: its \emph{sparse} regime ($p=\lambda/N$) has, by the covering lemma below, a Hasse
+diagram that is a subgraph of the generating Erd\H{o}s--R\'enyi graph $G(N,\lambda/N)$, whose
+local weak limit is a Galton--Watson tree, hence hyperbolic (exponential ball growth)---clause 2
+fails; its \emph{dense} regime has posts of positive density, and no Hasse edge crosses a post,
+so the order is an ordinal sum of finite blocks---one-dimensional, clause 2 fails. (iv) A
+square-generated percolating lattice has balanced $4$-cycles, so the circulation
+$\varphi(\gamma)=(\text{up}-\text{down})$ annihilates the cycle space; the potential
+$r(x)=\varphi(x_0\!\to\!x)$ is well defined, grading the order into an intrinsic foliation, which
+breaks boost invariance.
+
+\emph{Covering lemma} [theorem]. In transitive percolation, every Hasse (covering) edge is a
+\emph{directly sampled} edge of the generating graph: a covering pair $i\lessdot k$ has no
+intermediary, so it cannot arise from a directed path of length $\ge2$; it is a length-one edge.
+Hence $\mathrm{Hasse}\subseteq G(N,p)$, and a subgraph of a locally tree-like graph is locally
+tree-like. Certified: over four regimes $\times$ six seeds, every Hasse edge lies in the
+generating graph (zero violations); the sparse four-cycle density falls as $\sim1/N$
+($0.072\!\to\!0.011$) against a constant $\approx1.9$ for a genuine two-dimensional lattice.
+
+\emph{Realizability} [construction]. A $\mathbb Z^2$ crystal with five generators, and the graded
+square lattice, are SNA (finite valence, percolating plaquettes, amenable growth) and manifestly
+non-invariant (a deterministic crystal is not Lorentz-invariant by Bombelli--Henson--Sorkin; the
+graded lattice is foliated). \emph{Certificate.} A unified battery placing one representative of
+each class on the same measurement axis returns SNA true \emph{only} in the two non-invariant
+rows (crystal, foliated lattice), with no invariant or covariant counterexample.
+
+\subsection{Hosting (Constraint~\ref{c:hosting}): the form is a priori in $X=G/H$}
+\label{app:hosting}
+
+\emph{Mechanism} [theorem]. The coupling $E=-J\sum(1/\dim_f)\mathrm{Re}\,\mathrm{Tr}
+(U_iU_j^\dagger)=-J\sum v_i\!\cdot\!v_j$ is a functional of the bi-invariant (Killing) inner
+product on $G$, which every compact group carries. The substrate therefore cannot distinguish
+groups beyond dimension, coset structure, and topology, and the emergent form is fixed a priori:
+the Goldstone count is $\dim(G/H)$ (Goldstone's theorem), the topological charge lies in
+$\pi_3(G)=\mathbb Z$ (Bott, for every simple compact $G$), the unbroken multiplets are
+irreducible representations of $H$ (Peter--Weyl), and strong-coupling confinement is present and
+center-independent (the character expansion does not see $Z(G)$).
+
+\emph{Certificate.} The Goldstone count equals $\dim X$ across $SU(2)\!\to\!3$,
+$SU(3)\!\to\!8$, $SU(4)\!\to\!15$, $G_2\!\to\!14$, and---the discriminating case---the coset
+$O(3)=SU(2)/U(1)=S^2\!\to\!2$, which is $\dim S^2$ and \emph{not} $\dim SU(2)=3$: the form tracks
+the coset $X$, not the group $G$. The $\pi_3$ charge ladders of $SU(2)$ and $SU(3)$ coincide
+digit for digit ($0.795,0.892,0.951\to1$; anti-charge $=-B$), confirming $\pi_3=\mathbb Z$
+independent of $N$. Untested groups follow a priori ($SU(5)\!:\!24$, $F_4\!:\!52$, $E_6\!:\!78$;
+$\pi_3=\mathbb Z$).
+
+\subsection{Topology (Constraint~\ref{c:topology}): protected textures, forbidden defects}
+\label{app:topology}
+
+\emph{Statement} [theorem + certificate]. A matter texture of degree $n$ (a charge of the field
+$n\colon\mathcal C\to X$) is protected iff $\pi_n(X)\neq0$; the charge is a discrete invariant,
+conserved and---being topological---unchanged under thinning (Constraint~\ref{c:scale}: only
+non-topological data flows). A gauge defect (monopole, gauge string) needs an emergent gauge
+field, forbidden by Constraint~\ref{c:sna}; the monopole is doubly forbidden ($\pi_2(G)=0$ and no
+emergent $U(1)$). \emph{Certificate.} Integer charge along the homotopy ladder: a $\pi_1$ global
+vortex (winding $+1,+2,-1$), a $\pi_2$ baby Skyrmion (Berg--L\"uscher charge $+1,+2,-1$), and a
+$\pi_3$ baryon (convergent ladder, anti-charge $=-B$). The $\pi_2$ charge is invariant under
+random deletion of up to $40\%$ of the sites ($Q=0.9996$ down to keep-fraction $0.6$)---topology
+does not flow.
+
+\subsection{Discrete symmetry (Constraint~\ref{c:carrier}): breakable iff carried}
+\label{app:carrier}
+
+\emph{Statement} [theorem]. A discrete symmetry $S$ acting on $(\mathcal C,\prec,n)$ is breakable,
+explicitly or spontaneously, iff there is a nonzero intrinsic $S$-odd functional (a carrier). If
+$S$ acts trivially (an automorphism of the configuration), every $S$-odd $O$ obeys $O=-O\equiv0$,
+and spontaneous breaking is impossible for want of an order parameter (an Elitzur argument).
+\emph{Application.} Spatial reflection preserves $\prec$ (it is an order isomorphism), so parity
+acts as the identity---no carrier, closed both channels, kinematically. Time reversal acts as
+order duality $\prec\leftrightarrow\succ$, a genuine carrier, so it is not kinematically
+protected; the closure is empirical. Charge conjugation is an internal involution with an internal
+carrier and may break dynamically. \emph{Certificate.} Over twenty sprinklings, reflection
+preserves the order-isomorphism class $20/20$ and the mean of a candidate $P$-odd functional is
+compatible with zero; the intrinsic $T$-odd functional $\sum_i(\mathrm{outdeg}_i^2-
+\mathrm{indeg}_i^2)$ is nonzero per causet and flips sign under dualization $20/20$ (a carrier),
+while its mean is compatible with zero (the law is self-dual); the $C$-odd functional flips sign
+under the internal involution. The three chiral sectors of the Standard Model are the three
+lacking a geometric carrier.
+
+\begin{thebibliography}{9}
+\bibitem{CorePaper} M. Alves Mendes, \emph{What a Lorentz-invariant discrete order can carry: an
+axiomatic core for emergence on causal substrates}, companion paper (2026).
+\bibitem{WenComplement} M. Alves Mendes, \emph{Why Lorentz-invariant causal sets cannot support an
+emergent $U(1)$: a causal complement to string-net theory}, companion paper (2026).
+\bibitem{MatterGravityPRD} M. Alves Mendes, \emph{Topological matter and emergent gravitation from a
+causal network}, companion paper (2026).
+\bibitem{SU3PRD} M. Alves Mendes, \emph{Colour ferromagnetism in a causal network: confinement, the
+meson octet, and the order of the transition}, companion paper (2026).
+\end{thebibliography}
+
+\end{document}

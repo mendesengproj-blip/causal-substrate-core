@@ -9,16 +9,20 @@ theorem, a combinatorial trichotomy, a built-in thinning renormalization, a
 parity no-go, and exactly two external inputs — each carrying a proof of its own
 necessity.
 
-## The two manuscripts
+## The manuscripts
 
 | Folder | Manuscript | Venue | Status |
 |---|---|---|---|
-| `core_paper/` | *What a Lorentz-invariant discrete order can carry: an axiomatic core for emergence on causal substrates* (8 pp) | Phys. Rev. D | Submission-ready |
-| `wen_complement/` | *Why Lorentz-invariant causal sets cannot support an emergent U(1): a causal complement to string-net theory* (4 pp) | Class. Quantum Grav. | Submission-ready |
+| `core_paper/` | *What a Lorentz-invariant discrete order can carry: an axiomatic core for emergence on causal substrates* (8 pp) | Phys. Rev. D | Submitted |
+| `wen_complement/` | *Why Lorentz-invariant causal sets cannot support an emergent U(1): a causal complement to string-net theory* (4 pp) | Class. Quantum Grav. | Submitted |
+| `constraints_paper/` | *What any causal-substrate model must satisfy: structural constraints as a checklist for emergent physics* (5 pp) | Found. Phys. / CQG (perspective) | Draft — awaiting companion reviews |
 
-Each folder is self-contained (`.tex` + bibliography + cover letter) and compiles
+The first two are self-contained (`.tex` + bibliography + cover letter) and compile
 with `pdflatex ×2` (core paper, embedded bibliography) or
-`pdflatex → bibtex → pdflatex ×2` (Wen complement).
+`pdflatex → bibtex → pdflatex ×2` (Wen complement). The constraints paper packages
+the programme's necessity theorems as an explicit checklist any model built on a
+causal order must pass, and proves its four own classification results
+(Sec. below) in a self-contained appendix; it compiles with `pdflatex ×2`.
 
 The measured inputs both papers cite come from the companion TEIC programme —
 six manuscripts under review or submission-ready at MNRAS, PRD, PRL and CQG —
@@ -48,6 +52,32 @@ quoted number can be checked against its recorded run and re-executed:
   (c_K^loop < 0 at ~130σ)
 - `M1_TEOREMA_COMBINATORIO/`, `M3_ENDURECIMENTO/`, `M4_PAPER_NUCLEO/` — the
   combinatorial trichotomy, the proof hardening, and the core paper's build record
+- `M1B_FLANCO_PENTAGONAL/` — the pentagonal flank *constructed*: rank-frustrated
+  percolating loop lattices exist, but only as rigid non-invariant crystals
+- `M1C_FRONTEIRA_NAO_POISSON/` — the non-Poisson frontier *closes* by a geometric
+  dichotomy (dense ⇒ 1D blocks via posts; sparse ⇒ hyperbolic Galton–Watson tree),
+  with the closure hardened to theorem on the transitive-percolation axis
+- `F2_CONTROLE_G2/` — the exceptional-group control: G₂ (trivial center) mirrors
+  SU(N); confinement is center-independent at the accessible scales
+
+### The classification series and the constraints checklist
+
+The programme's second-generation results — necessity theorems read forwards, as
+a decision procedure — ship as their own campaigns, and are packaged by
+`constraints_paper/`:
+
+- `M5_CLASSIFICACAO/` — the classification theorem: a substrate is
+  string-net-admissible **iff** it is non-invariant (unified battery across every
+  named class)
+- `M6_HOSPEDAGEM/` — the hosting theorem: the coupling factors through the
+  bi-invariant metric, so the matter form is an a priori function of the compact
+  target *X = G/H* (Goldstone count = dim *X*, certified across SU(2/3/4), G₂, and
+  the coset O(3)/S²=2)
+- `M8_TOPOLOGIA/` — the topological classification: protected matter textures are
+  exactly π_n(X)≠0 (charge survives thinning); gauge defects are forbidden
+- `M9_SIMETRIAS_DISCRETAS/` — the discrete-symmetry classification by the carrier
+  criterion: a symmetry breaks iff it has an intrinsic carrier (P never, T
+  empirically, C dynamically)
 
 ## `closed_lines/` — the substrate-family measurements behind the trichotomy
 
@@ -74,12 +104,16 @@ at the repository root. Requirements: Python 3.12 with `numpy` and `scipy`.
 ## How to break these papers
 
 The core is deductive, so it is attackable at named joints (stated in the
-manuscripts): an emergent photon on an invariant causal substrate must break the
-trichotomy through the pentagonal flank or falsify the pair lemma; emergent
-chirality must break the isometry or exhaustion lemmas; an emergent scale must
-exhibit a relevant direction under thinning; a radiatively stabilized Skyrmion
-must overturn a 130σ measurement. A theory that tells you exactly where to hit
-it is doing its job.
+manuscripts): an emergent photon on an invariant causal substrate must falsify the
+pair lemma or leave the Poisson measure — the pentagonal-flank route through the
+trichotomy is now closed by construction (its only realization is a non-invariant
+crystal, `M1B_`), and the non-Poisson route is closed for sequential growth
+(`M1C_`), so the two combinatorial escapes have merged into the single live
+frontier of genuinely non-Markovian dynamical geometry; emergent chirality must
+break the isometry or exhaustion lemmas (equivalently, exhibit a carrier for
+parity, `M9_`); an emergent scale must exhibit a relevant direction under
+thinning; a radiatively stabilized Skyrmion must overturn a 130σ measurement. A
+theory that tells you exactly where to hit it is doing its job.
 
 ## License
 

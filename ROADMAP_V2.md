@@ -96,3 +96,17 @@ Pergunta-mestra: **"o que é permitido emergir?"** (não mais "o que emerge?").
 **Aposta declarada (2 anos):** transformar o programa em teoria axiomática.
 A mudança de fase já ocorreu — de "este fenômeno emerge?" para "quais fenômenos
 são impossíveis antes de simular?". O gargalo não é mais computacional.
+
+---
+
+## PROGRAMA 1 CONGELADO (05jul26)
+
+Nome retrospectivo: **Structural Constraints on Emergent Physics from Causal
+Substrates**. Critério atingido: núcleo cinemático completo; 8 papers
+submetidos; flancos combinatórios fechados (M1b, M1c); série de classificação
+em 4 eixos (M5/M6/M8/M9); checklist C1–C8 (M7, draft); primeira travessia
+quântica (N6, D2). Esta pasta só recebe: RESPOSTAS A REVISORES (deltas prontos)
+e a decisão de submissão do M7. Campanhas novas: **PROGRAMA 2 —
+`../RETROACAO_MATERIA_ORDEM/CHARTER.md`** (retroação matéria–ordem; a porta que
+os itens 9–10 da tabela de fronteiras nomeiam, com o instrumento que N6
+construiu). Executável seguinte de lá: R0 (âncoras na fonte) → pré-registro R1.

@@ -1,0 +1,37 @@
+{
+  "amendment": "G4->G4' e G5->G5' pre-bateria; causa no docstring",
+  "G1": true,
+  "G2": true,
+  "G3": true,
+  "G4_v1": false,
+  "G4_amended": true,
+  "G4_detail": {
+    "30": {
+      "max_jump": 16.33147308402235,
+      "median_other_jumps": 5.369166864120972,
+      "jump_dominance": false,
+      "max_hotcold_gap": 5.221621390023677,
+      "deep_hotcold_gap": 0.16466824504324462,
+      "coexistence": true
+    },
+    "50": {
+      "max_jump": 93.19386820382897,
+      "median_other_jumps": 8.651093478606981,
+      "jump_dominance": true,
+      "max_hotcold_gap": 74.33818940304492,
+      "deep_hotcold_gap": 0.15752449263551505,
+      "coexistence": true
+    },
+    "70": {
+      "max_jump": 198.07034753195222,
+      "median_other_jumps": 8.15751475401002,
+      "jump_dominance": true,
+      "max_hotcold_gap": 81.08520831280086,
+      "deep_hotcold_gap": 2.6207479141852756,
+      "coexistence": true
+    }
+  },
+  "G5_v1": false,
+  "G5_amended": true,
+  "verdict": "GREEN"
+}

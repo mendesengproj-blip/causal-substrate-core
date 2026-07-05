@@ -83,6 +83,14 @@ Pergunta-mestra: **"o que é permitido emergir?"** (não mais "o que emerge?").
    cristalinos [Z², Γ₃, Γ₅] com valência finita + pentágonos frustrados percolantes + NÃO-graduados; gate VERDE;
    conjectura-forte §6(b) de M1 MORTA; T1–T4 intactos; teorema físico invariante intacto e MAIS apertado
    [junta do flanco funde-se à junta não-Poisson]; deltas de paper ficam para a REVISÃO dos submetidos)
+9. Série de classificação (Linha B)     ✅ M5+M6+M8+M9 EXECUTADOS 04jul26 (SNA⟺não-invariante; hospedagem bi-invariante
+   + coset O(3)/S²=2; topologia π_n + thinning; critério do carrier P/T/C) + M7 paper de restrições C1–C8 (DRAFT,
+   autossuficiente, aguarda revisores dos companions) + M10 levantamento da fronteira quântica
+10. N6 TIPICIDADE QUÂNTICA              ✅ EXECUTADO 05jul26 (N6_TIPICIDADE_QUANTICA/: D2 — NENHUMA fase do path
+   integral BD-2D é SNA; checklist QUÂNTICO-ROBUSTA no regime continuado; cristalina=valência linear O(N) [KR-denso],
+   random=log [box/T3], transição=mistura 1ª-ordem [N≥70 aparado por orçamento, fechamento analítico declarado];
+   Módulo A: interferência REFORÇA posts; gate VERDE c/ emenda documentada [G3 duro 3/3: β_c=1.66/(Nε²)];
+   o binário clássico REAPARECE no lado quântico — a tensão é da ORDEM, não do peso)
 ```
 
 **Aposta declarada (2 anos):** transformar o programa em teoria axiomática.

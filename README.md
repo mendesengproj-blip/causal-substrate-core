@@ -14,7 +14,7 @@ necessity.
 | Folder | Manuscript | Venue | Status |
 |---|---|---|---|
 | `core_paper/` | *What a Lorentz-invariant discrete order can carry: an axiomatic core for emergence on causal substrates* (8 pp) | Phys. Rev. D | Submitted |
-| `wen_complement/` | *Why Lorentz-invariant causal sets cannot support an emergent U(1): a causal complement to string-net theory* (4 pp) | Class. Quantum Grav. | Submitted |
+| `wen_complement/` | *A classification theorem for emergent U(1) on causal substrates: string-net admissibility coincides with broken Lorentz invariance* (5 pp) | Found. Phys. | In submission |
 | `constraints_paper/` | *What any causal-substrate model must satisfy: structural constraints as a checklist for emergent physics* (5 pp) | Found. Phys. / CQG (perspective) | Draft — awaiting companion reviews |
 
 The first two are self-contained (`.tex` + bibliography + cover letter) and compile

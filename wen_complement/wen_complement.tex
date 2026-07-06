@@ -1,5 +1,8 @@
-% N3 WEN_COMPLEMENT --- short perspective paper of the FRONTEIRA_COMPACTA line.
+% N3 WEN_COMPLEMENT --- research article of the FRONTEIRA_COMPACTA line.
 % Gate: N0(c) (signature statement) + N0' (adversarial stress test) -- both green.
+% Rev. 05jul26 (pos desk-reject CQG-116553): M5 classification theorem + decision
+% table integrated (Sec. IV); M1c dichotomy upgrades CSG from measured to theorem;
+% N6 quantum-robustness note in scope; reframed perspective -> research article.
 % Claim discipline (charter): theorem about the CLASS (Axioms 1-2), never "Nature
 % obeys"; every measured input cited to the campaign that measured it; open flanks
 % declared in the final section.  Compiles with pdflatex+bibtex (revtex4-2).
@@ -11,8 +14,8 @@
 
 \begin{document}
 
-\title{Why Lorentz-invariant causal sets cannot support an emergent $U(1)$:\\
-a causal complement to string-net theory}
+\title{A classification theorem for emergent $U(1)$ on causal substrates:\\
+string-net admissibility coincides with broken Lorentz invariance}
 
 \author{Miqueias Alves Mendes}
 \email{mikalvesm@gmail.com}
@@ -25,7 +28,7 @@ matter, string-net condensation produces emergent photons as collective modes of
 degrees of freedom on a lattice; sixty years of emergence phenomenology stand behind it.
 In quantum gravity, causal set theory replaces spacetime by a Lorentz-invariant discrete
 order; its kinematics recovers dimension, curvature and d'Alembertians---but no causal
-substrate has ever produced an emergent photon. We argue these two facts have a single
+substrate has ever produced an emergent photon. We show these two facts have a single
 explanation, and that it is a theorem about signature rather than a technical gap.
 String-net condensation needs three structures: finite valence, closed loops of finite
 dimension, and an oriented spacelike 2-cell to carry magnetic flux. A Lorentz-invariant
@@ -35,7 +38,14 @@ theorem on the hyperboloid $H^{d-1}$); the measured escape routes fail a binary
 alternative (finite valence \emph{or} finite-dimensional loops, never both); and the
 causal order carries time with sign but space without sign and without structure, so the
 magnetic 2-cell has no carrier---a prediction verified directly (interval `diamonds' are
-$100\%$ electric). The exact boundary between the two worlds is the \emph{definiteness of
+$100\%$ electric). These pieces assemble into a classification theorem. Define a
+substrate to be \emph{string-net admissible} (SNA) if its Hasse diagram has finite
+valence, two-dimensional amenable ball growth, and a percolating plaquette density;
+then \emph{a causal substrate is SNA if and only if it is non-invariant}: every
+Lorentz-invariant or covariant-random class fails SNA by a proven mechanism, while the
+deterministic crystal and the foliated lattice realize it---and a unified decision
+table, one measured representative per class, confirms the boundary with no
+counterexample. The exact boundary between the two worlds is the \emph{definiteness of
 the metric signature}: separation orbits are compact spheres for $O(d)$ and infinite-volume
 quadrics for $O(p,q)$, so divergence is \emph{chosen} on the Euclidean side and
 \emph{forced} on the Lorentzian side. Wick rotation is precisely the operation that
@@ -64,9 +74,11 @@ The two programmes have an obvious meeting point---derive light on the causal
 substrate---and a striking non-meeting record: no construction on a Lorentz-invariant
 causal set has produced an emergent photon, ours included. Our own programme measured
 this negative from several independent directions before understanding it (Sec.~III).
-This perspective argues the non-meeting is structural, states the theorem that separates
-the two worlds, and locates the boundary exactly: it is the \emph{signature of the
-metric}, not the discreteness, not the dimension, and not a lack of ingenuity.
+Here we show the non-meeting is structural: we state a classification theorem that
+separates the two worlds (Sec.~IV), verify it on a unified decision table with one
+measured representative per invariance class, and locate the boundary exactly: it is
+the \emph{signature of the metric}, not the discreteness, not the dimension, and not a
+lack of ingenuity.
 
 Explaining a negative is rare and useful. The statement below explains simultaneously why
 string-net emergence \emph{works} in condensed matter and why it \emph{cannot transport}
@@ -147,7 +159,10 @@ variable, because the invariant $\Delta\tau$ cannot cut the boost direction. The
 family that fails both barriers at once, everywhere in parameter space.
 \item \emph{Non-Poisson growth} (classical sequential growth): the degree saturates
 (escapes the boost) but the transitive reduction has provably zero clustering and
-sub-mean-field 4-cycles---tree-like, no finite loop structure to condense.
+sub-mean-field 4-cycles---tree-like, no finite loop structure to condense. This exit
+has since been closed as a theorem, not just a measurement: the covariant family is
+geometrically dichotomous, hyperbolic or one-dimensional block, never two-dimensional
+amenable (Sec.~IV).
 \item \emph{Simplicial/CDT-like kinematics}: the only family whose 1-skeleton carries
 saturating loops (4-cycles $\approx 0.145$, transitivity $\approx 0.30$ in the
 two-dimensional flipped ensemble)---but its finite valence is the Euler identity of a
@@ -186,6 +201,77 @@ sprinkled Minkowski, minimal interval 2-cells are $100\%$
 electric~\cite{MatterGravityPRD}; background curvature opens a magnetic fraction only as
 $\mathrm{frac}_B\propto H^2$---itself now derived, since the count is even under
 time-reversal duality and must be even in $H$---with the flat-space value an exact zero.
+
+\section{The classification theorem: the string-net boundary coincides with the
+invariance boundary}
+
+The three refusals of Sec.~III, together with the constructions that survive them,
+assemble into a single decidable statement. Call a locally finite poset
+\emph{string-net admissible} (SNA) if its Hasse diagram offers the three structures of
+Sec.~II: \textbf{(SNA-1)} finite valence; \textbf{(SNA-2)} polynomial ball growth of
+dimension ${\approx}\,2$---an amenable, lattice-like skeleton rather than a
+hyperbolic expander; \textbf{(SNA-3)} a percolating $\Theta(N)$ density of minimal
+plaquettes. The predicate is intrinsic---order and counting only, no embedding
+data---and each clause is decidable by measurement on any substrate ensemble.
+
+\medskip
+\noindent\textbf{Theorem (classification).}
+\emph{(Exclusion: SNA $\Rightarrow$ non-invariant.)} No Lorentz-invariant or
+covariant-random substrate is SNA. Invariant rules on the Poisson sprinkling fail
+SNA-1 by Eq.~(\ref{eq:layer1}); exchangeable random orders possess no locally finite
+Hasse diagram at all; embedded box-orders fail SNA-1 logarithmically; and covariant
+sequential growth obeys a geometric dichotomy---sparse regimes are hyperbolic
+(tree-like: SNA-2 and SNA-3 fail), dense regimes are one-dimensional block chains
+punctuated by posts (SNA-2 fails)---so it is never two-dimensional amenable.
+\emph{(Realizability: SNA is inhabited in the non-invariant class.)} The deterministic
+crystal $\mathbb{Z}^2$ and the foliated square lattice are SNA; both lie outside every
+invariance class (no crystal is Lorentz-invariant, and square-generated percolating
+loops force a grading, hence a preferred foliation).
+
+\medskip
+\noindent\textbf{Corollary (the decision boundary).} \emph{A causal substrate is
+string-net admissible if and only if it is non-invariant.} An emergent photon on a
+causal substrate requires breaking invariance; there is no invariant route.
+
+\medskip
+Table~\ref{tab:sna} is the theorem made empirical: one representative of every named
+invariance class, measured on the same axis with the same estimators. SNA is true
+exactly on the two non-invariant lines; each invariant line fails by the mechanism its
+theorem names; no counterexample appeared. The converse direction is existence, not
+universality: not every non-invariant order is SNA (dust is not)---the content of the
+corollary is that the invariant side is \emph{empty} and the non-invariant side is
+\emph{inhabited}.
+
+\begin{table*}[t]
+\caption{\label{tab:sna}The unified decision table. Columns: mean Hasse valence
+$\langle z\rangle$ ($\uparrow\!N$ marks divergence with system size); post density;
+ball-growth exponential rate and polynomial degree (amenability window: rate $<0.35$
+with degree $\in[1.6,2.4]$, measured at the largest resolvable radius); minimal
+4-cycles per node (plaquette percolation). SNA-1/2/3 as defined in the text.
+Exchangeable orders are excluded by theorem (no locally finite Hasse diagram), hence
+carry no measured row. SNA is true exactly on the two non-invariant lines.}
+\begin{ruledtabular}
+\begin{tabular}{lcccccccccc}
+Class & invariant? & $\langle z\rangle$ & posts & rate & poly & $C_4/N$ &
+SNA-1 & SNA-2 & SNA-3 & SNA \\
+\colrule
+Poisson $\mathbb{M}^2$ & yes (Lorentz) & $11\;(\uparrow\!N)$ & $0$ & $0.69$ & $2.70$
+ & $29.6$ & $\times$ & $\times$ & $\checkmark$ & \textbf{no} \\
+box-order 2D & yes (embedded) & $11\;(\uparrow\!N)$ & $0$ & $0.82$ & $2.81$ & $29$
+ & $\times$ & $\times$ & $\checkmark$ & \textbf{no} \\
+CSG sparse & covariant & $3.9$ & $0$ & $0.66$ & $3.32$ & $0.02$
+ & $\checkmark$ & $\times$ & $\times$ & \textbf{no} \\
+CSG dense & covariant & $2.7$ & $0.35$ & $0.14$ & $0.99$ & $0.56$
+ & $\checkmark$ & $\times$ & $\checkmark$ & \textbf{no} \\
+exchangeable & yes & --- & --- & --- & --- & ---
+ & $\times$ & $\times$ & $\times$ & \textbf{no} \\
+crystal $\mathbb{Z}^2$ & \textbf{no} & $9.6$ & $0$ & $0.27$ & $1.93$ & $18.4$
+ & $\checkmark$ & $\checkmark$ & $\checkmark$ & \textbf{yes} \\
+foliated lattice & \textbf{no} & $4.0$ & $0$ & $0.25$ & $1.76$ & $1.95$
+ & $\checkmark$ & $\checkmark$ & $\checkmark$ & \textbf{yes} \\
+\end{tabular}
+\end{ruledtabular}
+\end{table*}
 
 \section{The boundary is the signature}
 
@@ -235,9 +321,11 @@ route is closed at three independent layers. The options are exhaustive and each
 declared research programme, not a loophole: (i) \emph{break Lorentz invariance}
 (preferred foliation)---measured to reproduce known spatial-lattice universality, i.e.,
 to re-enter condensed matter rather than extend it; (ii) \emph{leave the Poisson
-measure} for genuinely dynamical geometry---the one flank our kinematic theorem does
-not cover, and where our strongest constraint is only measured (mean-field behaviour in
-every CDT-like ensemble tested), not proven; (iii) \emph{import the gauge sector}---the
+measure} for genuinely dynamical geometry---for covariant sequential growth this exit
+is now closed by the geometric dichotomy of Sec.~IV; what remains open is genuinely
+non-Markovian or quantum-dynamical geometry, where our strongest constraint is only
+measured (mean-field behaviour in every CDT-like ensemble tested), not proven;
+(iii) \emph{import the gauge sector}---the
 honest default of the causal set programme itself, which couples matter fields to the
 order rather than deriving them.
 
@@ -272,8 +360,15 @@ foliation incompatible with boost invariance. The one combinatorial escape the t
 left open---percolating \emph{rank-frustrated} (pentagonal) loops---has now been
 constructed explicitly, but only as rigid crystals lying outside every invariance class,
 so it confirms rather than threatens the boundary: the obstruction is invariance, not the
-causal order as such. Dynamical geometry beyond the Poisson measure remains constrained
-only empirically. Within the class, the conclusion is closed: the absence of an emergent
+causal order as such. Covariant sequential growth is closed by the geometric dichotomy
+of Sec.~IV; what escapes the classification is genuinely non-Markovian growth, the one
+named open flank. Two robustness checks bound the statement from outside the classical
+kinematics: the boundary is insensitive to replacing classical statistical weights by
+interfering amplitudes over the same ensembles (the SNA verdict by valence class
+reappears unchanged in a first quantum crossing, indicating the obstruction lives in
+the order, not in the weight), and dynamical geometry in the CDT universality class
+remains constrained empirically (mean-field in every ensemble tested). Within the
+class, the conclusion is closed: the absence of an emergent
 photon on Lorentz-invariant causal sets is not an open problem awaiting a cleverer
 construction. It is the signature, doing to gauge structure exactly what it does to
 valence, to criticality, and---we now know---to the entropy of matter across a horizon.
